@@ -13,10 +13,20 @@
         align-items: center;
         gap: 30px;
     }
+    @media (max-width: 765px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .project_box {
     display: flex;
     justify-content: center;
     padding-top: 70px;
+}
+
+.img_work {
+    @media (max-width: 765px) {
+        width: 374px;
+    }
 }

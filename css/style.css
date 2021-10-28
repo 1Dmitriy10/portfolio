@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 765px) {
   .wrap {
-    width: 375px;
+    width: 373px;
   }
 }
 
@@ -45,6 +45,10 @@ body {
   .nav-box {
     padding-left: 0;
     padding-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
   }
 }
 
@@ -182,7 +186,7 @@ body {
 
 @media (max-width: 765px) {
   .plus-box-text {
-    width: 375px;
+    width: 373px;
   }
 }
 
@@ -268,6 +272,13 @@ body {
   }
 }
 
+@media (max-width: 765px) {
+  .work-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .project_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,6 +287,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 70px;
+}
+
+@media (max-width: 765px) {
+  .img_work {
+    width: 374px;
+  }
 }
 
 .wrap_skills {

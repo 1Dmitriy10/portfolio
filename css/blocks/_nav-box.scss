@@ -1,0 +1,28 @@
+.wrap_header {
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #828282;
+    @media (max-width: 765px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.nav-box_link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-box_item {
+    @media (max-width: 765px) {
+        width: 75px;
+    }
+}

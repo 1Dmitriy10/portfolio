@@ -1,0 +1,20 @@
+.wrap_footer {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 55px;
+    padding-bottom: 40px;
+    @media (max-width: 1140px) {
+        padding-top: 40px;
+    }
+}
+
+.ancor-up {
+    text-decoration: none;
+
+    color: #ffffff;
+}
+
+.icon-footer {
+    padding-right: 15px;
+}

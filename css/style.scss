@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1c1a25;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+    // outline: 1px solid red;
+
+    font-family: "Fira Sans", sans-serif;
+    color: #ffffff;
+    @media (max-width: 1140px) {
+        width: 768px;
+    }
+    @media (max-width: 765px) {
+        width: 375px;
+    }
+}
+
+@import "blocks/_nav-box.scss";
+
+@import "blocks/_about-me.scss";
+
+@import "blocks/_plus.scss";
+
+@import "blocks/_work.scss";
+
+@import "blocks/skills";
+
+@import "blocks/_footer.scss";

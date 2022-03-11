@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,18 +9,25 @@ body {
 }
 
 .wrap {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     // outline: 1px solid red;
-
     font-family: "Fira Sans", sans-serif;
     color: #ffffff;
-    @media (max-width: 1140px) {
-        width: 768px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        max-width: 970px;
     }
-    @media (max-width: 765px) {
-        width: 373px;
+    @media (max-width: 1000px) {
+        max-width: 750px;
     }
+    @media (max-width: 767px) {
+        max-width: none;
+    }
+}
+h2 {
+    color: #71899d;
+    font-size: 55px !important;
 }
 
 @import "blocks/_nav-box.scss";

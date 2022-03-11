@@ -8,15 +8,6 @@
     justify-content: space-around;
     padding-left: 26px;
     padding-right: 26px;
-    @media (max-width: 1140px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    @media (max-width: 765px) {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .project_box {
@@ -26,7 +17,27 @@
 }
 
 .img_work {
-    @media (max-width: 765px) {
-        width: 374px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.swiper {
+    height: 330px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    background-color: #71899d;
+    border-radius: 7px;
+}
+.swiper-button-next {
+    &::after {
+        color: #71899d;
+    }
+}
+.swiper-button-prev {
+    &::after {
+        color: #71899d;
     }
 }

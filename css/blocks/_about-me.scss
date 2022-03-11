@@ -14,26 +14,36 @@
     text-align: center;
     padding-top: 37px;
     padding-bottom: 37px;
-    @media (max-width: 765px) {
-        width: 375px;
-    }
+    font-size: 40px;
 }
 
 .text-box_content {
-    width: 396px;
+    width: 580px;
     text-align: center;
-    @media (max-width: 765px) {
-        width: 375px;
+    font-size: 25px;
+    @media (max-width: 1200px) {
+        width: 100%;
     }
 }
 
 .text-box-bg {
     background-image: url("../img/background-header\ 1.png");
-    height: 354px;
+    min-height: 354px;
     display: flex;
-    @media (max-width: 1140px) {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 720px;
+    @media (max-width: 1200px) {
+        flex-direction: column;
     }
+}
+.fa-arrow-up-wide-short {
+    width: 225px;
+    height: 200px;
+    color: #706d7e;
+}
+.fa-brain {
+    width: 225px;
+    height: 200px;
+    color: #2d2d2e;
+}
+.img_about {
+    width: 100%;
 }

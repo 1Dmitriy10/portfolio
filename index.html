@@ -8,13 +8,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ddb06d4443.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
     <section id="header" class="header">
+        <div class="burger-menu ">
+            <ul class="nav-burger-menu">
+                <li class="nav-item"><a class="nav-box_link" href="#about-me">Обо мне</a></li>
+                <li class="nav-item"><a class="nav-box_link" href="#plus">Плюсы работы со мной</a></li>
+                <li class="nav-item"><a class="nav-box_link" href="#work">Мои работы</a></li>
+                <li class="nav-item"><a class="nav-box_link" href="#skills">Навыки</a></li>
+                <li class="nav-item"><a class="nav-box_link" href="#footer"><span class="nav-li_5">Контакты</span></a>
+                </li>
+            </ul>
+        </div>
         <div class="wrap wrap_header">
             <ul class="nav-box">
                 <li class="nav-box_item"><a class="nav-box_link" href="#about-me">Обо мне</a></li>
@@ -24,6 +36,10 @@
                 <li class="nav-box_item"><a class="nav-box_link" href="#footer"><span
                             class="nav-li_5">Контакты</span></a></li>
             </ul>
+            <button class="btn-menu">
+                <span class="menu-burger-logo"></span>
+            </button>
+
         </div>
 
     </section>
@@ -32,14 +48,13 @@
             <div class="text-box-bg">
                 <div class="text-box">
                     <h1 class="text-box_header">Привет, меня зовут Дмитрий Земцов.</h1>
-                    <p class="text-box_content">Мне 28&nbsp;лет.&nbsp;8&nbsp;лет я&nbsp;занимался тем, что
-                        программировал
-                        станки с&nbsp;ЧПУ
-                        и&nbsp;теперь решил освоить новую для себя специальность. На&nbsp;данный момент прохожу курс
-                        frontend разработчик на&nbsp;платформе GeekBrains. Я&nbsp;позитивный, целеустремлённый
-                        и&nbsp;энергичный человек. Люблю учится новому, путешествия и&nbsp;активный отдых. К&nbsp;работе
-                        отношусь ответственно, быстро вникаю в&nbsp;работу. Уверен, что буду полезен в&nbsp;вашей
-                        компании.
+                    <p class="text-box_content">И у меня огромное желание начать работать
+                        frontend разработчиком. Я усидчивый, исполнительный и упорный. Мне нравится разбираться с кодом
+                        и в итоге видет, как он заработал. Открыт для всего нового. Считаю себя гибкип и обучаемым
+                        человеком. Не побоялся после 9 лет работы абсолютно в другой сфере переучиться и попробовать
+                        себя в IT. Нравится изучать что то новое. Люблю кататься на роликах, сноуборде и лыжах, горы и
+                        путешествия.
+
                     </p>
                 </div>
                 <img class="img_about" src="img/about-mi-img.png" alt="my-photo">
@@ -53,20 +68,17 @@
             <ul class="plus-box">
                 <li class="plus-box__items">
                     <div>
-                        <img src="img/interest.png" alt="">
+                        <i class="fa-solid fa-arrow-up-wide-short"></i>
 
                     </div>
-
                     <div class="plus-box-text">
-                        <h3 class="plus-box__header">Заинтересованность</h3>
-                        <p>Пусть я только новичок в этой сфере, но именно поэтому для меня работа это не рутина. Я
-                            не выполняю задачи "на автомате" или для галочки. К любой, даже самой простой, задаче я
-                            подхожу серьёзно, с интересом и энтузиазмом. Вы получите креативного, полного сил и
-                            желания работать сотрудника. </p>
+                        <h3 class="plus-box__header">Рост</h3>
+                        <p class="plus__text">
+                            Я легко обучаюсь и приспосабливаюсь к новым условиям. Планирую достичь определённых высот в
+                            этой профессии. Остаюсь спокойным и рассудительным практически в любой ситуации. Мне
+                            нравиться учиться чему то новому.
+                        </p>
                     </div>
-
-
-
                 </li>
 
                 <li class="plus-box__items">
@@ -78,7 +90,8 @@
 
                     <div class="plus-box-text">
                         <h3 class="plus-box__header">Трудолюбие</h3>
-                        <p>Вам не придётся меня заставлять работать. Мне важен опыт и знания, а для вас это означает
+                        <p class="plus__text">Вам не придётся меня заставлять работать. Мне важен опыт и знания, а для
+                            вас это означает
                             присутствие человека, который ХОЧЕТ работать, берется за любые задачи и переживает за
                             общее дело. </p>
                     </div>
@@ -95,30 +108,41 @@
 
                     <div class="plus-box-text">
                         <h3 class="plus-box__header">Ответственность</h3>
-                        <p>Хоть в этой сфере я новичок, мой общий стаж 8 лет. Я знаю насколько важно соблюдать
-                            сроки, придерживаться согласованностей и держать своё слово. Для меня важно иметь
+                        <p class="plus__text">Я знаю насколько важно соблюдать
+                            сроки, придерживаться согласованностей и держать своё слово. Я привык выполнять свою работу
+                            качественно Для меня важно иметь
                             репутацию, а поэтому вы всегда сможете на меня положиться. </p>
                     </div>
 
 
 
                 </li>
-
                 <li class="plus-box__items">
                     <div>
-                        <img src="img/benefit.png" alt="">
-
+                        <i class="fas fa-solid fa-brain"></i>
                     </div>
-
                     <div class="plus-box-text">
-                        <h3 class="plus-box__header">Выгода</h3>
-                        <p>Я не зациклен на высокой зарплате. На данный момент для меня главное получить бесценный
-                            опыт. В то же время я нахожусь на обучении, а значит вы получите сотрудника который
-                            профессионально растёт без каких либо вложений. </p>
-
-
-
+                        <h3 class="plus-box__header">Прохожу обучение</h3>
+                        <p class="plus__text">
+                            Я уже знаком с основами frontend: <br>
+                            - html,css,js<br>
+                            - знаю модульный подход в js<br>
+                            - пользуюсь scss<br>
+                            - подключаю некоторые библиотеки<br>
+                            - собираю проекты в webpack<br>
+                            - создаю анимации и эффекты трансформации<br>
+                            - использую нейминг по БЭМ<br>
+                            - npm<br>
+                            Скоро по плану изучения:<br>
+                            - vue(изучаю на данный момент)<br>
+                            - react<br>
+                            - семантика<br>
+                            - node.js
+                        </p>
+                    </div>
                 </li>
+
+
 
             </ul>
         </div>
@@ -126,24 +150,34 @@
     <section id="work" class="work">
         <div class="wrap wrap__work">
             <h2 class="work-header">Мои работы</h2>
-            <div class="work-box">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a target=»_blank» href="https://1dmitriy10.github.io/frontend-developer/">
+                            <img class="img_work" src="img/img-shop.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a target=»_blank» href="https://1dmitriy10.github.io/project1/">
+                            <img src="img/img-shop.png" alt=""></a>
+                    </div>
 
 
-                <a target=»_blank» href="https://1dmitriy10.github.io/mySite/">
-                    <img class="img_work" src="img/img-firstSite.png" alt="">
-                </a>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                <a target=»_blank» href="https://1dmitriy10.github.io/frontend-developer/">
-                    <img class="img_work" src="img/img-shop.png" alt="">
-                </a>
-
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
 
             </div>
-            <div class="project_box">
-                <a target=»_blank» href="https://1dmitriy10.github.io/project1/"><img src="img/project_bascet.png"
-                        alt=""></a>
-            </div>
+
         </div>
     </section>
     <section id="skills" class="skills">
@@ -153,12 +187,9 @@
                 <ul class="skill-box">
                     <li class="skill-box__item">
                         <img src="img/adaptiv.png" alt="adaptiv">
-                        <h3>Адаптивность</h3>
+                        <h3>Адаптив</h3>
                     </li>
-                    <li class="skill-box__item">
-                        <img src="img/bootstrap.png" alt="bootstrap">
-                        <h3>Bootstrap</h3>
-                    </li>
+
                     <li class="skill-box__item">
                         <img src="img/git.png" alt="git">
                         <h3>GIT</h3>
@@ -209,14 +240,20 @@
     <section id="footer" class="footer">
         <div class="wrap wrap_footer">
             <h2>Контакты</h2>
-            <h3>Московская область, город Балашиха.</h3>
-            <h3> <i class="fas fa-phone-square-alt icon-footer"></i> 8-926-725-69-26</h3>
-            <h3><i class="far fa-envelope icon-footer"></i>1primo1@mail.ru</h3>
+            <h3 class="footer__title">Московская область, город Балашиха.</h3>
+            <h3 class="footer__title"> <i class="fas fa-phone-square-alt icon-footer"></i> 8-926-725-69-26</h3>
+            <h3 class="footer__title"><i class="far fa-envelope icon-footer"></i>1primo1@mail.ru</h3>
+            <a class="link-github" href="https://github.com/1Dmitriy10">
+                <i class="fa fa-brands fa-github"></i>
+                <span class="link-github-text">Ссылка на мой профиль в github</span>
+            </a>
+
+
             <a class="ancor-up" href="#header">Наверх</a>
 
         </div>
     </section>
-
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

@@ -4,17 +4,42 @@
     display: flex;
     gap: 55px;
     padding-bottom: 40px;
-    @media (max-width: 1140px) {
-        padding-top: 40px;
-    }
 }
 
 .ancor-up {
     text-decoration: none;
-
+    font-size: 30px;
     color: #ffffff;
 }
 
 .icon-footer {
     padding-right: 15px;
+}
+.fa-github {
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    transition: 0.4s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.link-github {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-github-text {
+    transition: 0.4s;
+    font-size: 25px;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.footer__title {
+    font-size: 30px;
 }

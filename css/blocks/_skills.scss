@@ -9,14 +9,14 @@
 
 .skills-content {
     background-image: url("../img/bg-skills.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 702px;
     display: flex;
     justify-content: end;
-    @media (max-width: 765px) {
-        background-image: none;
-        height: 1000px;
+    @media (max-width: 1200px) {
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -31,9 +31,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     box-sizing: border-box;
-    @media (max-width: 1140px) {
-        width: 480px;
-    }
 }
 
 .skill-box__item {

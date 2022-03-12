@@ -248,7 +248,7 @@ h2 {
   display: flex;
   gap: 60px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (max-width: 1000px) {
   .plus-box__items {

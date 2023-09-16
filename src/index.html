@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/head.html',{
+"title": "Дмитрий Земцов"
+})
+
+<body>
+    <div class="popup-bg">
+        <div class="popup-wrap">
+        </div>
+        <button class="img-exit">х</button>
+    </div>
+    @@include('./html/header.html')
+    <main>
+        @@include('./html/about.html')
+        @@include('./html/service.html')
+        @@include('./html/certificates.html')
+        @@include('./html/portfolio.html')
+        @@include('./html/technologies.html')
+    </main>
+    @@include('./html/footer.html')
+    <script src="https://kit.fontawesome.com/ddb06d4443.js" crossorigin="anonymous"></script>
+    <script type="module" src="js/script.min.js"></script>
+</body>
+
+</html>

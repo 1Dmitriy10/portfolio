@@ -9,15 +9,27 @@
 }
 .service__title {
     margin-bottom: 1%;
+    transform: translateY(400px);
 }
 .service__subtaitle {
     margin-bottom: 4%;
+    transform: translateY(400px);
 }
 .service__content-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 45px;
+    transform: translateY(400px);
+    z-index: 10;
+}
+@keyframes an {
+    0% {
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .service__content-item {
     overflow: hidden;

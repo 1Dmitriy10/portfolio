@@ -17,14 +17,16 @@
     </div>
     <header class="header">
     <div class="container header__container">
-        <div class="header__logo-wrap">
+        <a href="#about" class="header__logo-wrap">
             <img class="img" src="img/header/Component 5 1.png" alt="logo">
-        </div>
+        </a>
         <nav class="nav">
-            <a href="#" class="nav-item">обо мне</a>
-            <a href="#" class="nav-item">навыки</a>
-            <a href="#" class="nav-item">портфолио</a>
-            <a href="#" class="nav-item">контакты</a>
+            <a href="#about" class="nav-item">обо мне</a>
+            <a href="#service" class="nav-item">услуги</a>
+            <a href="#sertificates" class="nav-item">навыки</a>
+            <a href="#portfolio" class="nav-item">портфолио</a>
+            <a href="#technologies" class="nav-item">технологии</a>
+            <a href="#footer" class="nav-item">контакты</a>
         </nav>
         <!-- Кнопка меню-бургера -->
         <button class="burger-menu-wrap">
@@ -35,21 +37,27 @@
 <nav class="nav_box-mob">
     <ul class="nav_box-mob-list">
         <li>
-            <a href="#" class="nav-item">обо мне</a>
+            <a href="#about" class="nav-item">обо мне</a>
         </li>
         <li>
-            <a href="#" class="nav-item">навыки</a>
+            <a href="#service" class="nav-item">услуги</a>
         </li>
         <li>
-            <a href="#" class="nav-item">портфолио</a>
+            <a href="#sertificates" class="nav-item">навыки</a>
         </li>
         <li>
-            <a href="#" class="nav-item">контакты</a>
+            <a href="#portfolio" class="nav-item">портфолио</a>
+        </li>
+        <li>
+            <a href="#technologies" class="nav-item">технологии</a>
+        </li>
+        <li>
+            <a href="#footer" class="nav-item">контакты</a>
         </li>
     </ul>
 </nav>
     <main>
-        <section class="about">
+        <section id="about" class="about">
     <div class="container about__container">
         <div class="about__text-box">
             <h1 class="about__title">
@@ -68,15 +76,15 @@
         </div>
     </div>
 </section>
-        <section class="service">
+        <section id="service" class="service">
     <div class="container service__container">
-        <h2 class="title service__title">
+        <h2 class="title service__title anim">
             сервис
         </h2>
-        <h3 class="subtitle service__subtaitle">
+        <h3 class="subtitle service__subtaitle anim">
             Услуги, которые я выполняю
         </h3>
-        <div class="service__content-box">
+        <div class="service__content-box anim">
             <div class="service__content-item">
                 <div class="service__content-item-bg-blue"></div>
                 <h3 class="service__content-title">
@@ -124,14 +132,14 @@
         </div>
     </div>
 </section>
-        <section class="certification">
+        <section id="sertificates" class="certification">
     <div class="container certification__container">
-        <h2 class="subtitle certification__subtitle">
+        <h2 class="subtitle certification__subtitle anim">
             Сертификаты
         </h2>
 
         <!-- Главный контейнер -->
-        <div class="swiper certificates__slider">
+        <div class="swiper certificates__slider anim">
             <!-- Оболочка -->
             <div class="swiper-wrapper">
                 <!-- Слайды -->
@@ -161,15 +169,15 @@
         <div class="certificates__slider-btn-prev"></div>
         <div class="certificates__slider-btn-next"></div>
 </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
     <div class="container portfolio__container">
-        <h2 class="title portfolio__title">
+        <h2 class="title portfolio__title anim">
             портфолио
         </h2>
-        <h3 class="subtitle portfolio__subtitle">
+        <h3 class="subtitle portfolio__subtitle anim">
             Мои работы
         </h3>
-        <div class="portfolio__item-box">
+        <div class="portfolio__item-box anim">
             <div class="portfolio__item">
                 <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
                 <div class="portfolio__description-box">
@@ -180,13 +188,13 @@
         </div>
     </div>
 </section>
-        <section class="technologies">
+        <section id="technologies" class="technologies">
     <div class="container technologies__container">
-        <h3 class="subtitle technologies__subtitle">
+        <h3 class="subtitle technologies__subtitle anim">
             Технологии, которые я использую
         </h3>
         <!-- Главный контейнер -->
-        <div class="swiper technologies__slider">
+        <div class="swiper technologies__slider anim">
             <!-- Оболочка -->
             <div class="swiper-wrapper">
                 <!-- Слайды -->
@@ -246,9 +254,9 @@
     </div>
 </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
     <div class="container footer__container">
-        <div class="footer__text-box">
+        <div class="footer__text-box anim">
             <h2 class="footer__title">
                 контакты
             </h2>
@@ -256,7 +264,7 @@
                 8-926-725-69-26
             </span>
             <span class="footer__text">
-                1primo1@mail.ru
+                dmitryzemtsow@yandex.ru
             </span>
             <div class="footer__social-box">
                 <a href="#" class="footer__social-item">
@@ -267,34 +275,34 @@
                 </a>
             </div>
         </div>
-        <div class="footer__form-box">
-            <form class="form" action="#">
+        <div class="footer__form-box anim">
+            <form class="form" action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
                 <div class="form__row">
                     <span class="form__name-row">
                         ваше имя
                     </span>
-                    <input class="form__input" type="text">
+                    <input class="form__input" name="name" type="text">
                 </div>
                 <div class="form__row">
                     <span class="form__name-row">
                         ваш телефон
                     </span>
-                    <input class="form__input" type="tel">
+                    <input class="form__input" name="phone" type="tel">
                 </div>
                 <div class=" form__row">
                     <span class="form__name-row">
                         ваш email
                     </span>
-                    <input class="form__input" type="email">
+                    <input class="form__input" name="email" type="email">
                 </div>
                 <div class="form__row">
                     <span class="form__name-row">
                         ваше сообщение
                     </span>
-                    <textarea class="form__text-area" id="story" name="story" rows="5" cols="33"></textarea>
+                    <textarea class="form__text-area" id="story" name="story"></textarea>
                 </div>
                 <div class="form__btn-box">
-                    <button class="form__btn">отправить</button>
+                    <button name="submit" type="submit" class="form__btn">отправить</button>
                 </div>
             </form>
         </div>

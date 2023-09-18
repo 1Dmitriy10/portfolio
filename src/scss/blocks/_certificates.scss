@@ -11,10 +11,12 @@
 .certification__subtitle {
     text-align: center;
     margin-bottom: 2.5%;
+    transform: translateY(400px);
 }
 .certificates__slider {
     width: 96%;
     padding: 20px;
+    transform: translateY(400px);
 }
 
 .certificates__slider-item {
@@ -44,6 +46,11 @@
     left: 0;
     cursor: pointer;
     z-index: 10;
+    transition: 0.5s;
+    &:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
 }
 .certificates__slider-btn-next {
     width: 35px;
@@ -56,4 +63,9 @@
     right: 0;
     cursor: pointer;
     z-index: 10;
+    transition: 0.5s;
+    &:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
 }

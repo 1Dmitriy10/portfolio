@@ -49,10 +49,11 @@ summary {
 
 .footer {
   background: url("../img/footer/footer-bg.png") 0 0/cover no-repeat;
+  overflow: hidden;
 }
 
 .footer__container {
-  padding: 1% 10px 1% 10px;
+  padding: 5% 10px 5% 10px;
   display: flex;
   flex-wrap: wrap-reverse;
 }
@@ -70,6 +71,7 @@ summary {
   justify-content: space-between;
   align-items: center;
   min-width: 340px;
+  transform: translateY(400px);
 }
 @media (max-width: 740px) {
   .footer__text-box {
@@ -101,17 +103,28 @@ summary {
 .fa-telegram {
   color: #09aff4;
   font-size: 45px;
+  transition: 0.5s;
+}
+.fa-telegram:hover {
+  transition: 0.5s;
+  color: #fff;
 }
 
 .fa-vk {
   color: #09aff4;
   font-size: 45px;
+  transition: 0.5s;
+}
+.fa-vk:hover {
+  transition: 0.5s;
+  color: #fff;
 }
 
 .footer__form-box {
   flex: 0 0 50%;
   display: flex;
   justify-content: center;
+  transform: translateY(400px);
 }
 @media (max-width: 740px) {
   .footer__form-box {
@@ -177,10 +190,17 @@ summary {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 40px;
+  font-size: calc(25px + 15 * ((100vw - 320px) / 1110));
   font-weight: 500;
   letter-spacing: 0.48px;
   padding: 10px 25px 10px 25px;
+  transition: 0.5s;
+  border: 1px solid #09aff4;
+}
+.form__btn:hover {
+  transition: 0.5s;
+  color: #09aff4;
+  background-color: transparent;
 }
 
 .header {
@@ -223,6 +243,11 @@ summary {
   text-align: center;
   font-size: 25px;
   font-weight: 500;
+  transition: 0.5s;
+}
+.nav-item:hover {
+  transition: 0.5s;
+  text-decoration: underline;
 }
 
 .burger-menu-wrap {
@@ -396,7 +421,7 @@ summary {
 
 .about__subtitle {
   color: #09aff4;
-  font-size: calc(30px + 26 * ((100vw - 320px) / 1110));
+  font-size: calc(35px + 21 * ((100vw - 320px) / 1110));
   font-weight: 700;
   line-height: 160.714%; /* 90px */
   margin-bottom: 6.5%;
@@ -405,7 +430,6 @@ summary {
 .about__text {
   color: #fff;
   font-size: calc(15px + 15 * ((100vw - 320px) / 1110));
-  font-size: 30px;
   font-weight: 400;
   line-height: 106.667%; /* 32px */
 }
@@ -437,7 +461,7 @@ summary {
 
 .about__title {
   color: #fff;
-  font-size: calc(30px + 26 * ((100vw - 320px) / 1110));
+  font-size: calc(35px + 21 * ((100vw - 320px) / 1110));
   font-weight: 700;
   line-height: 160.714%; /* 90px */
 }
@@ -478,10 +502,12 @@ summary {
 
 .service__title {
   margin-bottom: 1%;
+  transform: translateY(400px);
 }
 
 .service__subtaitle {
   margin-bottom: 4%;
+  transform: translateY(400px);
 }
 
 .service__content-box {
@@ -489,8 +515,18 @@ summary {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 45px;
+  transform: translateY(400px);
+  z-index: 10;
 }
 
+@keyframes an {
+  0% {
+    transform: translateY(400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .service__content-item {
   overflow: hidden;
   position: relative;
@@ -568,11 +604,13 @@ summary {
 .certification__subtitle {
   text-align: center;
   margin-bottom: 2.5%;
+  transform: translateY(400px);
 }
 
 .certificates__slider {
   width: 96%;
   padding: 20px;
+  transform: translateY(400px);
 }
 
 .certificates__slider-item {
@@ -604,6 +642,11 @@ summary {
   left: 0;
   cursor: pointer;
   z-index: 10;
+  transition: 0.5s;
+}
+.certificates__slider-btn-prev:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .certificates__slider-btn-next {
@@ -617,6 +660,11 @@ summary {
   right: 0;
   cursor: pointer;
   z-index: 10;
+  transition: 0.5s;
+}
+.certificates__slider-btn-next:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .portfolio {
@@ -627,15 +675,21 @@ summary {
   padding: 2.6% 10px 4% 10px;
 }
 
+.portfolio__title {
+  transform: translateY(400px);
+}
+
 .portfolio__subtitle {
   margin-top: 1%;
   margin-bottom: 2.4%;
+  transform: translateY(400px);
 }
 
 .portfolio__item-box {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  transform: translateY(400px);
 }
 @media (max-width: 668px) {
   .portfolio__item-box {
@@ -706,7 +760,7 @@ summary {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../img/portfolio/Arrow 3.png") center center/70% no-repeat;
+  background: url("../img/portfolio/Arrow 3.png") center center/70% no-repeat;
   background-color: #09aff4;
   width: 60px;
   height: 100%;
@@ -718,6 +772,11 @@ summary {
   opacity: 1;
   transition: 0.5s;
   transform: translateX(0);
+}
+.portfolio__btn:hover {
+  transition: 0.2s;
+  background: url("../img/portfolio/Arrow 3.png") center center/75% no-repeat;
+  background-color: #09aff4;
 }
 
 .technologies {
@@ -732,6 +791,11 @@ summary {
 .technologies__subtitle {
   margin-bottom: 5.5%;
   text-align: center;
+  transform: translateY(400px);
+}
+
+.technologies__slider {
+  transform: translateY(400px);
 }
 
 .technologies__slider-item {
@@ -769,6 +833,11 @@ summary {
   left: 0;
   cursor: pointer;
   z-index: 10;
+  transition: 0.5s;
+}
+.technologies__arrow-prev:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .technologies__arrow-next {
@@ -782,6 +851,11 @@ summary {
   right: 0;
   cursor: pointer;
   z-index: 10;
+  transition: 0.5s;
+}
+.technologies__arrow-next:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 body {

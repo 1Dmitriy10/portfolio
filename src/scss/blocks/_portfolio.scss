@@ -5,15 +5,18 @@
     padding: 2.6% 10px 4% 10px;
 }
 .portfolio__title {
+    transform: translateY(400px);
 }
 .portfolio__subtitle {
     margin-top: 1%;
     margin-bottom: 2.4%;
+    transform: translateY(400px);
 }
 .portfolio__item-box {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    transform: translateY(400px);
     @media (max-width: 668px) {
         justify-content: center;
     }
@@ -73,7 +76,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../../img/portfolio/Arrow 3.png") center center / 70% no-repeat;
+    background: url("../img/portfolio/Arrow 3.png") center center / 70% no-repeat;
     background-color: #09aff4;
     width: 60px;
     height: 100%;
@@ -84,5 +87,10 @@
         opacity: 1;
         transition: 0.5s;
         transform: translateX(0);
+    }
+    &:hover {
+        transition: 0.2s;
+        background: url("../img/portfolio/Arrow 3.png") center center/75% no-repeat;
+        background-color: #09aff4;
     }
 }

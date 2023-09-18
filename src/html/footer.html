@@ -1,6 +1,6 @@
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="container footer__container">
-        <div class="footer__text-box">
+        <div class="footer__text-box anim">
             <h2 class="footer__title">
                 контакты
             </h2>
@@ -8,7 +8,7 @@
                 8-926-725-69-26
             </span>
             <span class="footer__text">
-                1primo1@mail.ru
+                dmitryzemtsow@yandex.ru
             </span>
             <div class="footer__social-box">
                 <a href="#" class="footer__social-item">
@@ -19,34 +19,34 @@
                 </a>
             </div>
         </div>
-        <div class="footer__form-box">
-            <form class="form" action="#">
+        <div class="footer__form-box anim">
+            <form class="form" action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
                 <div class="form__row">
                     <span class="form__name-row">
                         ваше имя
                     </span>
-                    <input class="form__input" type="text">
+                    <input class="form__input" name="name" type="text">
                 </div>
                 <div class="form__row">
                     <span class="form__name-row">
                         ваш телефон
                     </span>
-                    <input class="form__input" type="tel">
+                    <input class="form__input" name="phone" type="tel">
                 </div>
                 <div class=" form__row">
                     <span class="form__name-row">
                         ваш email
                     </span>
-                    <input class="form__input" type="email">
+                    <input class="form__input" name="email" type="email">
                 </div>
                 <div class="form__row">
                     <span class="form__name-row">
                         ваше сообщение
                     </span>
-                    <textarea class="form__text-area" id="story" name="story" rows="5" cols="33"></textarea>
+                    <textarea class="form__text-area" id="story" name="story"></textarea>
                 </div>
                 <div class="form__btn-box">
-                    <button class="form__btn">отправить</button>
+                    <button name="submit" type="submit" class="form__btn">отправить</button>
                 </div>
             </form>
         </div>

@@ -12,19 +12,19 @@
 
 .service__title {
     margin-bottom: 1%;
-    transform: translateY(400px);
+    // transform: translateY(400px);
 }
 
 .service__subtaitle {
     margin-bottom: 4%;
-    transform: translateY(400px);
+    // transform: translateY(400px);
 }
 
 .service__content-box {
     display: flex;
     flex-wrap: wrap;
     gap: 34px;
-    transform: translateY(400px);
+    // transform: translateY(400px);
     z-index: 10;
 
     @include respond-to("pc") {
@@ -39,7 +39,7 @@
 
 @keyframes an {
     0% {
-        transform: translateY(400px);
+        // transform: translateY(400px);
     }
 
     100% {

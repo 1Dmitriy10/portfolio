@@ -12,6 +12,8 @@ import { activeMenu } from "./activeMenu.js";
 import { tilt } from "./tilt.js";
 import { bg } from "./jquery.buoyant.js";
 import { fancybox } from "./fancybox.js";
+import { getAos } from "./aos.js";
+
 
 
 

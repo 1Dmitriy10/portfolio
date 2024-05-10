@@ -216,14 +216,26 @@ export function bg(){
     
     }(jQuery));
    
-    
-		jQuery(".wrap").buoyant({
-			numberOfItems: 150,
-			backgroundColor: "#09AFF4",
-			minRadius: 1,
-			maxRadius: 3,
-			elementClass: 'circles'
-		});
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+if (mediaQuery.matches) {
+    jQuery(".wrap").buoyant({
+        numberOfItems: 150,
+        backgroundColor: "#09AFF4",
+        minRadius: 1,
+        maxRadius: 3,
+        elementClass: 'circles'
+    });
+}else{
+    jQuery(".test").buoyant({
+        numberOfItems: 100,
+        backgroundColor: "#09AFF4",
+        minRadius: 0.5,
+        maxRadius: 1.5,
+        elementClass: 'circles'
+    });
+}
+
+		
 	
         
 };

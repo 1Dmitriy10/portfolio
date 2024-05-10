@@ -2,6 +2,12 @@
     background: url("../img/certificates/bg-prog.png") 0 0 / cover no-repeat;
     background-color: #0a3665;
     background-attachment: fixed;
+
+    @include respond-to("tab") {
+        background: url("../img/certificates/bg-prog.png") center / cover no-repeat;
+        background-color: #0a3665;
+        background-attachment: fixed;
+    }
 }
 
 .technologies__container {
@@ -79,6 +85,10 @@
 
     &:hover {
         transition: 0.5s !important;
+        background: #ffffff !important;
+    }
+
+    @include respond-to("tab") {
         background: #ffffff !important;
     }
 }

@@ -347,6 +347,14 @@ textarea {
     }
 }
 
+.test {
+    height: 0;
+
+    @include respond-to("tab") {
+        height: 300px;
+    }
+}
+
 
 @import "./blocks/footer";
 @import "./blocks/header";

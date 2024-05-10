@@ -361,6 +361,15 @@ textarea {
     opacity: 0;
   }
 }
+.test {
+  height: 0;
+}
+@media (max-width: 768px) {
+  .test {
+    height: 300px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -857,6 +866,7 @@ summary {
   transition: 0.5s;
   transform: translateY(-436px);
   background-color: #09aff4;
+  height: 100dvh;
 }
 .nav_box-mob.active {
   transition: 0.5s;
@@ -1137,19 +1147,16 @@ summary {
 
 .service__title {
   margin-bottom: 1%;
-  transform: translateY(400px);
 }
 
 .service__subtaitle {
   margin-bottom: 4%;
-  transform: translateY(400px);
 }
 
 .service__content-box {
   display: flex;
   flex-wrap: wrap;
   gap: 34px;
-  transform: translateY(400px);
   z-index: 10;
 }
 @media (max-width: 1400px) {
@@ -1164,9 +1171,6 @@ summary {
 }
 
 @keyframes an {
-  0% {
-    transform: translateY(400px);
-  }
   100% {
     transform: translateY(0);
   }
@@ -1247,6 +1251,12 @@ summary {
   background: url("../img/certificates/bg-prog.png") 0 0/cover no-repeat;
   background-color: #0a3665;
   position: relative;
+}
+@media (max-width: 768px) {
+  .certification {
+    background: url("../img/certificates/bg-prog.png") center/cover no-repeat;
+    background-color: #0a3665;
+  }
 }
 
 .certification__container {
@@ -1501,6 +1511,13 @@ summary {
   background-color: #0a3665;
   background-attachment: fixed;
 }
+@media (max-width: 768px) {
+  .technologies {
+    background: url("../img/certificates/bg-prog.png") center/cover no-repeat;
+    background-color: #0a3665;
+    background-attachment: fixed;
+  }
+}
 
 .technologies__container {
   position: relative;
@@ -1571,6 +1588,11 @@ summary {
 .technologies__swiper-slide:hover {
   transition: 0.5s !important;
   background: #ffffff !important;
+}
+@media (max-width: 768px) {
+  .technologies__swiper-slide {
+    background: #ffffff !important;
+  }
 }
 
 .reviews {

@@ -989,7 +989,7 @@ summary {
 
 .about {
   background: url("../img/about/about-bg.png") 0 0/cover no-repeat;
-  height: 953px;
+  height: 100dvh;
   padding: 0;
 }
 

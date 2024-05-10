@@ -107,10 +107,11 @@
 
 .portfolio__item-title {
     color: #ecedef;
-    font-size: 30px;
+    @include adaptiveValue(font-size, 30, 18);
     font-weight: 600;
     letter-spacing: 0.3px;
     text-align: center;
+
 }
 
 .portfolio__btn {

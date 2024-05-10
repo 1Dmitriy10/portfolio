@@ -1475,7 +1475,7 @@ summary {
 
 .portfolio__item-title {
   color: #ecedef;
-  font-size: 30px;
+  font-size: calc(18px + 12 * ((100vw - 320px) / 1110));
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: center;

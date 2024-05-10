@@ -1,0 +1,51 @@
+// ===================================================Миксины=============================================
+
+//=========Миксин брейкпоинтов===============
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+}
+
+//============шрифты==============
+@mixin font($weight, $size, $color, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    line-height: $height;
+}
+
+//=======адаптивное св-во==============
+@mixin adaptiveValue($property, $startSize, $minSize) {
+    $addSize: $startSize - $minSize;
+    // Ширина полотна макета
+    $maxWidth: 1920;
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+}
+
+// =========================================Функции=====================================================
+
+// //перевод в rem
+// @function rem($size) {
+//     @return $size / 16px * 1rem;
+// }
+
+// перевод в rem
+@function r($px) {
+    $result: $px / 16 + rem;
+    @return $result;
+}
+
+//пропорциональное изменение высоты изображения
+@function prop($h, $w) {
+    $result: $h / $w * 100%;
+    @return $result;
+}
+
+//адаптивный отступ
+@function in($w, $x) {
+    $result: $x * 100% / $w;
+    @return $result;
+}

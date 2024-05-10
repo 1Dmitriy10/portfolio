@@ -1,22 +1,29 @@
 .certification {
-    background: url("../img/certificates/certificates__bg.png") 0 0 / cover no-repeat;
+
+    background: url("../img/certificates/bg-prog.png") 0 0 / cover no-repeat;
+    background-color: #0a3665;
     position: relative;
 }
+
 .certification__container {
-    padding: 3.3% 10px 5.3% 10px;
+    // padding: 3.3% 10px 5.3% 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .certification__subtitle {
     text-align: center;
     margin-bottom: 2.5%;
     transform: translateY(400px);
 }
+
 .certificates__slider {
     width: 96%;
     padding: 20px;
     transform: translateY(400px);
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 
 .certificates__slider-item {
@@ -28,44 +35,73 @@
     height: 0;
     padding-bottom: prop(320, 424);
 }
+
 .certificates__slider-item-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
+
 .certificates__slider-btn-prev {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background: url("../img/certificates/arrow-prev.png") 9px 0 / contain no-repeat;
-    background-color: #060922;
+    background: url("../img/certificates/Arrow-blue.svg") 9px 0 / contain no-repeat;
+    // background-color: #060922;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 10px;
     cursor: pointer;
     z-index: 10;
     transition: 0.5s;
+
     &:hover {
         transition: 0.5s;
         transform: scale(1.1);
     }
 }
+
 .certificates__slider-btn-next {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background: url("../img/certificates/arrow-next.png") 9px 0 / contain no-repeat;
-    background-color: #060922;
+    background: url("../img/certificates/Arrow-blue.svg") 9px 0 / contain no-repeat;
+    // background-color: #060922;
     position: absolute;
+    transform: rotate(180deg);
     top: 50%;
-    right: 0;
+    right: 10px;
     cursor: pointer;
     z-index: 10;
     transition: 0.5s;
+
     &:hover {
         transition: 0.5s;
-        transform: scale(1.1);
+        transform: rotate(180deg) scale(1.1);
+    }
+}
+
+.certificates__slide {
+    height: 250px !important;
+    position: relative !important;
+    cursor: pointer !important;
+
+    @include respond-to("pc") {
+        height: 220px !important;
+    }
+
+    @include respond-to("nout") {
+        height: 180px !important;
+    }
+
+    @include respond-to("tab") {
+        height: 280px !important;
+    }
+
+    @include respond-to("tel-old") {
+        height: 220px !important;
     }
 }

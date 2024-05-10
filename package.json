@@ -12,7 +12,9 @@
   "author": "dz",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "browser-sync": "last",
+    "css-loader": "^7.1.1",
     "del": "last",
     "gulp": "last",
     "gulp-autoprefixer": "last",
@@ -25,6 +27,7 @@
     "gulp-newer": "last",
     "gulp-notify": "last",
     "gulp-plumber": "last",
+    "gulp-real-favicon": "^0.3.2",
     "gulp-rename": "last",
     "gulp-replace": "last",
     "gulp-sass": "last",
@@ -32,7 +35,10 @@
     "gulp-version-number": "last",
     "gulp-zip": "last",
     "sass": "last",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
     "swiper": "^10.2.0",
+    "tilt.js": "^1.2.1",
     "webpack": "last",
     "webpack-stream": "last"
   }

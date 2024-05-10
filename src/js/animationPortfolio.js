@@ -12,11 +12,14 @@ export function getAnimation() {
         wrap = ev.target.lastElementChild;
         btn = wrap.firstElementChild;
         wrap.classList.add("active");
-        const anim = setTimeout(() => { btn.classList.add("active"); clearTimeout(anim) }, 500);
+        const anim = setTimeout(() => { btn.classList.add("active"); clearTimeout(anim) }, 200);
     }
-    function removeActive() {
+    function removeActive(ev) {
+        // wrap = ev.target.lastElementChild;
         btn.classList.remove("active");
-        const anim = setTimeout(() => { wrap.classList.remove("active"); clearTimeout(anim) }, 500);
+        // const anim = setTimeout(() => { wrap.classList.remove("active"); clearTimeout(anim) }, 200);
+        wrap.classList.remove("active");
     }
 }
-getAnimation()
+getAnimation();
+

@@ -9,10 +9,21 @@ export const js = () => {
     })
         ))
      .pipe(webpack({
-        mode: app.isBuild ? "production" : "development",
+        mode: app.isBuild ? "production" : "none",
+        optimization: {
+            // minimize: false
+        },
         output: {
             filename: 'script.min.js'
-        }
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.(sass|less|css)$/,
+                    use: ["style-loader", "css-loader", 'sass-loader'],
+                },
+            ],
+        },
      })) 
      .pipe(app.gulp.dest(app.path.build.js)) // в какой файл выгрузить
      .pipe(app.plugins.browserSync.stream())   

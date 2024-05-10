@@ -1,183 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230918101739">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230918101739" />
-    <title>Дмитрий Земцов</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    <meta name="robots" content="noindex">
+    <!--  -->
+    <title>Dev-Дмитрий</title>
+    <meta name="description"
+        content="Веб студия. Разработка сайта с нуля, верстка html, интеграция на wordpress, наполнение сайта контентом." />
 </head>
 
 <body>
-    <div class="popup-bg">
-        <div class="popup-wrap">
-        </div>
-        <button class="img-exit">х</button>
-    </div>
     <header class="header">
-    <div class="container header__container">
-        <a href="#about" class="header__logo-wrap">
-            <img class="img" src="img/header/Component 5 1.png" alt="logo">
-        </a>
-        <nav class="nav">
-            <a href="#about" class="nav-item">обо мне</a>
-            <a href="#service" class="nav-item">услуги</a>
-            <a href="#sertificates" class="nav-item">навыки</a>
-            <a href="#portfolio" class="nav-item">портфолио</a>
-            <a href="#technologies" class="nav-item">технологии</a>
-            <a href="#footer" class="nav-item">контакты</a>
-        </nav>
-        <!-- Кнопка меню-бургера -->
-        <button class="burger-menu-wrap">
-            <span class="burger-menu"></span>
-        </button>
-    </div>
-</header>
-<nav class="nav_box-mob">
-    <ul class="nav_box-mob-list">
-        <li>
-            <a href="#about" class="nav-item">обо мне</a>
-        </li>
-        <li>
-            <a href="#service" class="nav-item">услуги</a>
-        </li>
-        <li>
-            <a href="#sertificates" class="nav-item">навыки</a>
-        </li>
-        <li>
-            <a href="#portfolio" class="nav-item">портфолио</a>
-        </li>
-        <li>
-            <a href="#technologies" class="nav-item">технологии</a>
-        </li>
-        <li>
-            <a href="#footer" class="nav-item">контакты</a>
-        </li>
-    </ul>
-</nav>
+        <div class="container header__container">
+            <a href="#about" class="header__logo-wrap">
+                <img class="img" src="img/header/logo.png" alt="Логотип сайта">
+            </a>
+
+            <nav class="navmenu_3 nav">
+                <ul>
+                    <li class="nav-li"><a class="nav-item _scroll-js active" href="#about">Обо мне</a></li>
+                    <li class="nav-li"><a class="nav-item _scroll-js" href="#service">Услуги </a></li>
+                    <li class="nav-li"><a class="nav-item _scroll-js" href="#sertificates">Навыки</a></li>
+                    <li class="nav-li"><a class="nav-item _scroll-js" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-li"><a class="nav-item _scroll-js" href="#technologies">Технологии</a></li>
+                    <li class="nav-li"><a class="nav-item _scroll-js" href="#reviews">Отзывы</a></li>
+                    <li class="nav-li"><a class="nav-item _scroll-js" href="#footer">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__contact-box">
+                <a href="tel:+79363145640" class="header-phone">
+                    +7 936-314-56-40
+                </a>
+                <button data-fancybox data-src="#form" class="form__btn header__form-btn">
+                    Получить консультацию
+                </button>
+
+                <form id="form" style="display:none;" class="form"
+                    action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+                    <div class="form__row">
+                        <span class="form__name-row">
+                            Ваше имя
+                        </span>
+                        <input class="form__input" name="name" type="text">
+                    </div>
+                    <div class="form__row">
+                        <span class="form__name-row">
+                            Ваш телефон
+                        </span>
+                        <input class="form__input" name="phone" type="tel">
+                    </div>
+                    <div class=" form__row">
+                        <span class="form__name-row">
+                            Ваш email
+                        </span>
+                        <input class="form__input" name="email" type="email">
+                    </div>
+                    <div class="form__row">
+                        <span class="form__name-row">
+                            Ваше сообщение
+                        </span>
+                        <textarea class="form__text-area" name="story"></textarea>
+                    </div>
+                    <div class="form__btn-box">
+                        <button name="submit" type="submit" class="form__btn">Отправить</button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- Кнопка меню-бургера -->
+            <button class="burger-menu-wrap">
+                <span class="burger-menu"></span>
+            </button>
+        </div>
+    </header>
+    <nav class="nav_box-mob">
+        <ul class="nav_box-mob-list">
+            <li>
+                <a href="#about" class="nav-item _scroll-js">Обо мне</a>
+            </li>
+            <li>
+                <a href="#service" class="nav-item _scroll-js">Услуги</a>
+            </li>
+            <li>
+                <a href="#sertificates" class="nav-item _scroll-js">Навыки</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="nav-item _scroll-js">Портфолио</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="nav-item _scroll-js">Технологии</a>
+            </li>
+            <li>
+                <a href="#technologies" class="nav-item _scroll-js">Отзывы</a>
+            </li>
+            <li>
+                <a href="#footer" class="nav-item _scroll-js">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__contact-box header__contact-box_mob">
+            <a href="tel:+79363145640" class="header-phone">
+                +7 936-314-56-40
+            </a>
+            <button data-fancybox data-src="#form-2" class="form__btn header__form-btn">
+                Получить консультацию
+            </button>
+
+            <form id="form-2" style="display:none;" class="form"
+                action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+                <div class="form__row">
+                    <span class="form__name-row">
+                        Ваше имя
+                    </span>
+                    <input class="form__input" name="name" type="text">
+                </div>
+                <div class="form__row">
+                    <span class="form__name-row">
+                        Ваш телефон
+                    </span>
+                    <input class="form__input" name="phone" type="tel">
+                </div>
+                <div class=" form__row">
+                    <span class="form__name-row">
+                        Ваш email
+                    </span>
+                    <input class="form__input" name="email" type="email">
+                </div>
+                <div class="form__row">
+                    <span class="form__name-row">
+                        Ваше сообщение
+                    </span>
+                    <textarea class="form__text-area" name="story"></textarea>
+                </div>
+                <div class="form__btn-box">
+                    <button name="submit" type="submit" class="form__btn">Отправить</button>
+                </div>
+            </form>
+
+        </div>
+    </nav>
     <main>
         <section id="about" class="about">
-    <div class="container about__container">
-        <div class="about__text-box">
-            <h1 class="about__title">
-                Земцов Дмитрий
-            </h1>
-            <h2 class="about__subtitle">
-                Веб-мастер
-            </h2>
-            <p class="about__text">
-                Верстаю сайты на основе дизайн-макетов. Наполняю и обновляю сайты через cms. Уверен, что сайты должны
-                быть удобными, а интерфейсы доступными. Внимателен и аккуратен.
-            </p>
-        </div>
-        <div class="about__img-wrap">
-            <img class="img about__img" src="img/about/photo_5192698401433702031_y 2.png" alt="my photo">
-        </div>
-    </div>
-</section>
-        <section id="service" class="service">
-    <div class="container service__container">
-        <h2 class="title service__title anim">
-            сервис
-        </h2>
-        <h3 class="subtitle service__subtaitle anim">
-            Услуги, которые я выполняю
-        </h3>
-        <div class="service__content-box anim">
-            <div class="service__content-item">
-                <div class="service__content-item-bg-blue"></div>
-                <h3 class="service__content-title">
-                    Верстальщик
-                </h3>
-                <p class="service__content-text">
-                    Верстаю сайты по дизайн-макету на заказ. Пользуюсь набором: html, css, js, что делает верстку более
-                    гибкой. Она не привязана к фреймворку или библиотеке.
-                </p>
-                <ul class="service__content-list">
-                    <li>
-                        Работаю с макетами типа fig, psd
-                    </li>
-                    <li>
-                        Делаю переходы и анимацию
-                    </li>
-                    <li>
-                        Адаптивно и кросбраузерно
-                    </li>
-                    <li>
-                        Валидно и с конвертированием медиафайлов под web
-                    </li>
-                </ul>
-            </div>
-            <div class="service__content-item">
-                <div class="service__content-item-bg-blue"></div>
-                <h3 class="service__content-title">
-                    Контент-менеджер (cms)
-                </h3>
-                <p class="service__content-text">
-                    Наполняю сайт и актуализирую информацию на нем, через cms. Работаю c wordpress и 1c bitrix.
-                </p>
-                <ul class="service__content-list">
-                    <li>
-                        создание и редактирование страниц, разделов, элементов, товаров и новостей
-                    </li>
-                    <li>
-                        импорт/экспорт
-                    </li>
-                    <li>
-                        установка плагинов
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-        <section id="sertificates" class="certification">
-    <div class="container certification__container">
-        <h2 class="subtitle certification__subtitle anim">
-            Сертификаты
-        </h2>
+            <div class="wrap">
+                <div class="container about__container">
+                    <div class="about__text-box">
+                        <h1 class="about__title">
+                            Земцов Дмитрий
+                        </h1>
+                        <h2 class="about__subtitle">
+                            Веб-мастер
+                        </h2>
+                        <p class="about__text">
+                            Занимаюсь разработкой сайтов. Возможность заказать сайт под ключ. Предлагаю отдельные услуги
+                            по
+                            верстке на html, посадки верстки на cms, наполнение сайта на cms контентом. Считаю, что
+                            сайты должны
+                            быть функциональными и удобными.
+                        </p>
+                    </div>
+                    <div class="about__img-wrap">
+                        <span data-tilt>
+                            <img class="img about__img js-tilt" src="img/about/illustration.png"
+                                alt="Фото для украшения дизайна">
+                        </span>
 
-        <!-- Главный контейнер -->
-        <div class="swiper certificates__slider anim">
-            <!-- Оболочка -->
-            <div class="swiper-wrapper">
-                <!-- Слайды -->
-                <div class="swiper-slide">
-                    <div class="certificates__slider-item"><img class="certificates__slider-item-img minimize"
-                            src="img/certificates/certification__slid-1.png" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="certificates__slider-item"><img class="certificates__slider-item-img minimize"
-                            src="img/certificates/certification__slid-2.png" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="certificates__slider-item"><img class="certificates__slider-item-img minimize"
-                            src="img/certificates/certification__slid-3.png" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="certificates__slider-item"><img class="certificates__slider-item-img minimize"
-                            src="img/certificates/certification__slid-4.png" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="certificates__slider-item"><img class="certificates__slider-item-img minimize"
-                            src="img/certificates/certification__slid-5.png" alt=""></div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <div class="link-box">
+            <!-- icon666.com - MILLIONS vector ICONS FREE --><svg viewBox="0 0 512.00006 512"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m429.554688 0h-231.015626c-41.128906 0-74.863281 31.699219-77.214843 71.53125h-106.324219c-5.621094 0-10.769531 3.144531-13.339844 8.144531-2.570312 5-2.128906 11.015625 1.144532 15.585938l46.300781 64.6875v276.070312c0 41.894531 34.695312 75.980469 77.34375 75.980469h236.113281c41.1875 0 74.957031-31.785156 77.226562-71.699219 40.265626-2.605469 72.210938-35.613281 72.210938-75.816406v-283.515625c0-44.644531-36.984375-80.96875-82.445312-80.96875zm-19.644532 436.019531c0 25.351563-21.238281 45.980469-47.347656 45.980469h-236.113281c-26.105469 0-47.34375-20.628906-47.34375-45.980469v-280.882812c0-3.132813-.980469-6.183594-2.804688-8.730469l-32.117187-44.875h345.523437c11.140625 0 20.203125 8.71875 20.203125 19.433594zm72.089844-71.535156c0 23.628906-18.445312 43.152344-42.089844 45.699219v-289.21875c0-27.257813-22.519531-49.433594-50.203125-49.433594h-238.292969c2.3125-23.273438 22.5625-41.53125 47.125-41.53125h231.015626c28.917968 0 52.445312 22.863281 52.445312 50.96875zm0 0">
+                </path>
+                <path
+                    d="m364.261719 216.71875h-240.25c-8.28125 0-15 6.714844-15 15s6.71875 15 15 15h240.25c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0">
+                </path>
+                <path
+                    d="m124.011719 306.71875h195.894531c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-195.894531c-8.28125 0-15 6.714844-15 15s6.71875 15 15 15zm0 0">
+                </path>
+                <path
+                    d="m343.539062 336.71875h-219.527343c-8.28125 0-15 6.714844-15 15s6.71875 15 15 15h219.523437c8.285156 0 15-6.714844 15-15s-6.714844-15-14.996094-15zm0 0">
+                </path>
+            </svg>
+            <span class="link-box-ping ping"></span>
+            <span class="link-box-ping ping-2"></span>
+            <span class="link-box-wrap"></span>
+            <a target="_blank" class="main-link" href="https://t.me/dev_dmitrii">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_138_161)">
+                        <path
+                            d="M16.1006 18.9447C15.9443 18.9447 15.7892 18.8984 15.6561 18.8082L10.6273 15.397L7.93012 17.3378C7.71858 17.4899 7.44593 17.5282 7.2003 17.4404C6.95499 17.3523 6.76869 17.1491 6.70219 16.8972L5.3479 11.7648L0.508904 9.91455C0.204269 9.79802 0.00223509 9.50658 1.84203e-05 9.18041C-0.00219825 8.85424 0.195825 8.56006 0.498981 8.43941L18.8986 1.11805C18.9821 1.08258 19.0705 1.0621 19.1596 1.05661C19.1915 1.05471 19.2234 1.05471 19.2552 1.05651C19.4397 1.06749 19.621 1.14264 19.7624 1.28134C19.7771 1.2957 19.791 1.31037 19.8042 1.32568C19.9214 1.45952 19.9858 1.62271 19.9979 1.78896C20.0009 1.83076 20.0007 1.87309 19.997 1.91542C19.9944 1.94561 19.9901 1.97569 19.984 2.00556L16.8782 18.3012C16.8283 18.563 16.6501 18.7821 16.4039 18.8842C16.3063 18.9247 16.2032 18.9447 16.1006 18.9447ZM11.0688 13.7833L15.5483 16.8217L17.9649 4.14191L9.2368 12.5406L11.0477 13.769C11.055 13.7736 11.062 13.7784 11.0688 13.7833ZM7.33985 13.1076L7.93962 15.3802L9.23183 14.4504L7.53977 13.3026C7.46113 13.2494 7.39379 13.1831 7.33985 13.1076ZM2.96994 9.16025L6.29263 10.4306C6.53066 10.5216 6.71031 10.7217 6.77534 10.9681L7.19672 12.5651C7.21603 12.3809 7.29953 12.2075 7.43517 12.077L15.7518 4.07435L2.96994 9.16025Z"
+                            fill="#ffffff" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_138_161">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a target="_blank" class="main-link main-link_green" href="https://wa.me/79363145640">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_138_173)">
+                        <path
+                            d="M0.833323 18.9583C0.729168 19.1667 0.833323 19.375 0.937478 19.4791C1.14583 19.5833 1.35414 19.5833 1.56249 19.5833L4.68747 18.4375C6.24996 19.4791 8.12496 20 9.99996 20C15.5208 20 20 15.5208 20 9.99996C20 4.47912 15.5208 0 10 0C4.47916 0 0 4.47916 0 10C0 12.0833 0.625013 14.1667 1.875 15.8333L0.833323 18.9583ZM1.04167 9.89585C1.04167 4.89582 5.10418 0.93752 10 0.93752C14.8958 0.93752 18.9583 5.00002 18.9583 9.89585C18.9583 14.7917 14.8958 18.8542 10 18.8542C8.22916 18.8542 6.45831 18.3334 4.99998 17.3958C4.89582 17.2917 4.79163 17.2917 4.68747 17.2917C4.58332 17.2917 4.58332 17.2917 4.47912 17.2917L2.08327 18.2292L2.91659 15.8334C3.02074 15.625 2.91659 15.5209 2.81243 15.3126C1.66669 13.75 1.04167 11.875 1.04167 9.89585Z"
+                            fill="#ffffff" />
+                        <path
+                            d="M11.979 16.0415C12.4998 16.1457 12.9165 16.2499 13.4373 16.2499C14.6873 16.2499 15.6248 15.729 16.2498 14.7915C16.5623 14.1665 16.6665 13.6457 16.5623 13.1248C16.354 12.4998 15.8332 12.1873 15.729 12.0832L14.1665 11.2498C13.9582 11.1457 13.7499 11.0415 13.5415 11.0415C12.4998 11.0415 11.8748 12.1873 11.8748 12.1873C11.8748 12.1873 11.7707 12.2915 11.5623 12.2915C11.4582 12.2915 11.4582 12.2915 11.4582 12.2915C9.89567 11.7707 8.74984 10.3123 8.22898 9.58315L8.12483 9.479C7.70817 9.16649 7.60401 9.16649 8.02067 8.74983C8.854 8.02066 8.64569 7.18734 8.43733 6.87483L7.39566 4.37482C7.2915 4.16647 6.87484 3.854 6.45814 3.854C5.93732 3.854 5.31231 4.16651 4.58314 4.89568C2.8123 6.66652 4.16648 9.37484 4.16648 9.37484C6.14563 14.5832 11.7706 15.9373 11.979 16.0415ZM5.31227 5.6248C5.93728 4.89564 6.35394 4.89564 6.4581 4.89564L7.60393 7.39565C7.60393 7.4998 7.70808 7.70815 7.39558 8.02066C6.3539 8.95818 6.66641 9.58315 7.18722 10.2082L7.29138 10.3123C7.8122 11.0415 9.16638 12.8123 11.0414 13.3331C11.0414 13.3331 11.2497 13.3331 11.458 13.3331C11.9789 13.3331 12.3956 13.1248 12.708 12.7081C12.8122 12.3956 13.333 11.8748 13.7497 12.0831L15.3122 12.8123C15.3122 12.8123 15.5205 12.9164 15.6247 13.1248C15.7288 13.4373 15.5205 13.7498 15.4163 13.9581C14.8955 14.8956 13.8538 15.1039 12.3955 14.7914C12.1872 14.7914 7.08303 13.4373 5.20799 8.85394C5.10396 9.06233 4.06228 6.97899 5.31227 5.6248Z"
+                            fill="#ffffff" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_138_173">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
         </div>
-        <!-- Стрелки -->
-        <div class="certificates__slider-btn-prev"></div>
-        <div class="certificates__slider-btn-next"></div>
-</section>
+        <section id="service" class="service">
+            <div class="container service__container">
+                <h2 class="title service__title anim">
+                    сервис
+                </h2>
+                <h3 class="subtitle service__subtaitle anim">
+                    Услуги, которые я выполняю
+                </h3>
+                <div class="service__content-box anim">
+                    <div class="service__content-item">
+                        <div class="service__content-item-bg-blue"></div>
+                        <h3 class="service__content-title">
+                            Верстка на html
+                        </h3>
+                        <p class="service__content-text">
+                            Верстка сайта по макету. При верстке используются css, html, js. Большинство скриптов пишу
+                            сам, что
+                            бы было меньше внешних зависимостей. Верстка будет адаптивной и кросс браузерной.
+                        </p>
+                    </div>
+                    <div class="service__content-item">
+                        <div class="service__content-item-bg-blue"></div>
+                        <h3 class="service__content-title">
+                            Создание сайта с нуля
+                        </h3>
+                        <p class="service__content-text">
+                            Комплексное решение. От вас потребуется только заполненный бриф, все остальное ложиться на
+                            мои
+                            плечи. В услугу входит разработка карты сайта, дизайн, верстка, посадка на wordpress,
+                            настройка
+                            административной панели, подключение метрики и рекламы, запуск сайта
+                        </p>
+                    </div>
+                    <div class="service__content-item">
+                        <div class="service__content-item-bg-blue"></div>
+                        <h3 class="service__content-title">
+                            Разработка сайта на готовом шаблоне wordpress
+                        </h3>
+                        <p class="service__content-text">
+                            Разработка сайта на готовом шаблоне wordpress значительно ускоряет процесс, а так же
+                            экономит бюджет
+                            на дизайне. У wordpress множество готовых тем, можно выбрать подходящую и наполнить ее вашим
+                            контентом.
+                        </p>
+                    </div>
+                    <div class="service__content-item">
+                        <div class="service__content-item-bg-blue"></div>
+                        <h3 class="service__content-title">
+                            Посадка верстки на wordpress
+                        </h3>
+                        <p class="service__content-text">
+                            Если у вас уже есть html верстка сайта, предлагаю услуги посадки на wordpress. Интегрирую
+                            верстку,
+                            настрою админ панель, формы обратной связи, установлю необходимые плагины. По окончанию вы
+                            получаете
+                            полностью рабочий сайт на cms wordpress.
+                        </p>
+                    </div>
+                    <div class="service__content-item">
+                        <div class="service__content-item-bg-blue"></div>
+                        <h3 class="service__content-title">
+                            Наполнение сайта на cms
+
+                        </h3>
+                        <p class="service__content-text">
+                            Дополнительная услуга. При создании объемных сайтов требуется добавить большой объем
+                            контента.
+                            Заполняю карточки товаров, блог, новости, услуги и т.д. Наполню ваш сайт контентом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sertificates" class="certification">
+            <div class="container certification__container">
+                <h2 class="subtitle certification__subtitle anim">
+                    Сертификаты
+                </h2>
+
+                <!-- Главный контейнер -->
+                <div class="swiper certificates__slider anim">
+                    <!-- Оболочка -->
+                    <div class="swiper-wrapper">
+                        <!-- Слайды -->
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-1.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-1.png"
+                                alt="Сертификат по html/css интерактивный курс">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-2.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-2.png"
+                                alt="Сертификат по основам программирования на js">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-3.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-3.png"
+                                alt="Сертификат по html/css сложный уровень">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-4.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-4.png"
+                                alt="Сертификат по js начальный уровень ">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-5.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img minimize"
+                                src="img/certificates/certification__slid-5.png"
+                                alt="Сертификат по окончанию курсов по инструменты сборки web-проектов">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-6.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-6.png"
+                                alt="Сертификат по окончанию курсов по базы данных. Основы">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-7.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-7.png"
+                                alt="Сертификат окончания курсов js базовый">
+                        </a>
+                        <a data-fancybox="certificates" href="img/certificates/certification__slid-8.png"
+                            class="swiper-slide certificates__slide">
+                            <img class="certificates__slider-item-img" src="img/certificates/certification__slid-8.png"
+                                alt="Сертификат 1с-Битрикс - контент-менеджер">
+                        </a>
+                    </div>
+                </div>
+                <!-- Стрелки -->
+                <div class="certificates__slider-btn-prev"></div>
+                <div class="certificates__slider-btn-next"></div>
+            </div>
+        </section>
         <section id="portfolio" class="portfolio">
-    <div class="container portfolio__container">
-        <h2 class="title portfolio__title anim">
-            портфолио
-        </h2>
-        <h3 class="subtitle portfolio__subtitle anim">
-            Мои работы
-        </h3>
-        <div class="portfolio__item-box anim">
+            <div class="container portfolio__container">
+                <h2 class="title portfolio__title anim">
+                    портфолио
+                </h2>
+                <h3 class="subtitle portfolio__subtitle anim">
+                    Мои работы
+                </h3>
+                <div class="portfolio__item-box anim">
+                    <!-- <div class="portfolio__item">
+                <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
+                <div class="portfolio__description-box">
+                    <a href="#" class="portfolio__btn"></a>
+                    <span class="portfolio__item-title">semitex</span>
+                </div>
+            </div>
             <div class="portfolio__item">
                 <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
                 <div class="portfolio__description-box">
@@ -185,131 +388,314 @@
                     <span class="portfolio__item-title">semitex</span>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-        <section id="technologies" class="technologies">
-    <div class="container technologies__container">
-        <h3 class="subtitle technologies__subtitle anim">
-            Технологии, которые я использую
-        </h3>
-        <!-- Главный контейнер -->
-        <div class="swiper technologies__slider anim">
-            <!-- Оболочка -->
-            <div class="swiper-wrapper">
-                <!-- Слайды -->
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-1.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-2.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-3.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-4.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-5.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-6.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-7.png" alt="html">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="technologies__slider-item">
-                        <img class="technologies__slider-item-img"
-                            src="img/technologies/technologies__slider-img-8.png" alt="html">
-                    </div>
+            <div class="portfolio__item">
+                <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
+                <div class="portfolio__description-box">
+                    <a href="#" class="portfolio__btn"></a>
+                    <span class="portfolio__item-title">semitex</span>
                 </div>
             </div>
-        </div>
-        <!-- Стрелки -->
-        <div class="technologies__arrow-prev"></div>
-        <div class="technologies__arrow-next"></div>
-    </div>
-</section>
+            <div class="portfolio__item">
+                <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
+                <div class="portfolio__description-box">
+                    <a href="#" class="portfolio__btn"></a>
+                    <span class="portfolio__item-title">semitex</span>
+                </div>
+            </div>
+            <div class="portfolio__item">
+                <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
+                <div class="portfolio__description-box">
+                    <a href="#" class="portfolio__btn"></a>
+                    <span class="portfolio__item-title">semitex</span>
+                </div>
+            </div>
+            <div class="portfolio__item">
+                <img src="img/portfolio/potfolio__site-1.jpg" alt="site-semitex" class="portfolio__item-img">
+                <div class="portfolio__description-box">
+                    <a href="#" class="portfolio__btn"></a>
+                    <span class="portfolio__item-title">semitex</span>
+                </div>
+            </div> -->
+                </div>
+                <button class="form__btn portfolio__btn-more">
+                    Показать еще
+                </button>
+            </div>
+        </section>
+        <section id="technologies" class="technologies">
+            <div class="container technologies__container">
+                <h3 class="subtitle technologies__subtitle anim">
+                    Технологии, которые я использую
+                </h3>
+                <!-- Главный контейнер -->
+                <div class="swiper technologies__slider anim">
+                    <!-- Оболочка -->
+                    <div class="swiper-wrapper">
+                        <!-- Слайды -->
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-1.png" alt="Логотип html">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-2.png" alt="Логотип javascript">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-3.png" alt="Логотип css">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-4.png" alt="Логотип sass">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-5.png" alt="Логотип wordpress">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-6.png" alt="Логотип bitrix">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-7.png" alt="Логотип gulp">
+                        </div>
+                        <div class="swiper-slide technologies__swiper-slide">
+                            <img class="technologies__slider-item-img"
+                                src="img/technologies/technologies__slider-img-8.png" alt="Логотип figma">
+                        </div>
+                    </div>
+                </div>
+                <!-- Стрелки -->
+                <!-- <div class="technologies__arrow-prev"></div>
+        <div class="technologies__arrow-next"></div> -->
+            </div>
+        </section>
+        <section id="reviews" class='reviews'>
+            <div class='container reviews__container'>
+                <h2 class="title reviews__title anim">
+                    Отзывы
+                </h2>
+
+                <!-- Главный контейнер -->
+                <div class="swiper reviews__slider anim">
+                    <!-- Оболочка -->
+                    <div class="swiper-wrapper">
+                        <!-- Слайды -->
+                        <div class="swiper-slide reviews-slide">
+                            <h3 class="reviews__slider-name">
+                                dvornikH
+                            </h3>
+                            <div class="reviews__slider-img-wrap">
+                                <img src="img/reviews/avatar-m.jpg" alt="Аватар оставившего отзыв"
+                                    class="reviews__slider-img">
+                            </div>
+                            <p class="reviews__slider-text">
+                                Отличный исполнитель! Все сделал в короткие сроки и самое главное по адекватной цене. И
+                                самое
+                                главное консультирует по коду. Рекомендую
+                            </p>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <h3 class="reviews__slider-name">
+                                fedotikov
+                            </h3>
+                            <div class="reviews__slider-img-wrap">
+                                <img src="img/reviews/avatar-m.jpg" alt="Аватар оставившего отзыв"
+                                    class="reviews__slider-img">
+                            </div>
+                            <p class="reviews__slider-text">
+                                Все отлично! Сделали быстро и качественно.
+                            </p>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <h3 class="reviews__slider-name">
+                                Алексей
+                            </h3>
+                            <div class="reviews__slider-img-wrap">
+                                <img src="img/reviews/avatar-m.jpg" alt="Аватар оставившего отзыв"
+                                    class="reviews__slider-img">
+                            </div>
+                            <p class="reviews__slider-text">
+                                Исполнитель сделал верстку по макетам и в срок.
+
+                                На момент заказа мне важнее была скорость и качество итоговой верстки. Базово все
+                                сделали
+                                качественно, затем пришлось потратить много времени на допиливание до полного
+                                соответствия
+                                мелочей к макету.
+
+                                За свои деньги мне кажется результат хороший.
+                            </p>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <h3 class="reviews__slider-name">
+                                Федор
+                            </h3>
+                            <div class="reviews__slider-img-wrap">
+                                <img src="img/reviews/avatar-m.jpg" alt="Аватар оставившего отзыв"
+                                    class="reviews__slider-img">
+                            </div>
+                            <p class="reviews__slider-text">
+                                Исполнитель понравился. Вежливый, сделал всё в срок, сам доработал мобильную версию.
+                                Исправления
+                                вносил без лишних разговоров.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Стрелки -->
+                <div class="reviews__arrow-prev"></div>
+                <div class="reviews__arrow-next"></div>
+            </div>
+        </section>
     </main>
     <footer id="footer" class="footer">
-    <div class="container footer__container">
-        <div class="footer__text-box anim">
-            <h2 class="footer__title">
-                контакты
-            </h2>
-            <span class="footer__text">
-                8-926-725-69-26
-            </span>
-            <span class="footer__text">
-                dmitryzemtsow@yandex.ru
-            </span>
-            <div class="footer__social-box">
-                <a href="#" class="footer__social-item">
-                    <i class="fab fa-telegram"></i>
-                </a>
-                <a href="#" class="footer__social-item">
-                    <i class="fab fa-vk"></i>
-                </a>
+        <div class="container footer__container">
+
+            <div class="footer__form-box anim">
+                <form class="form" action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+                    <div class="form__row">
+                        <span class="form__name-row">
+                            Ваше имя
+                        </span>
+                        <input class="form__input" name="name" type="text">
+                    </div>
+                    <div class="form__row">
+                        <span class="form__name-row">
+                            Ваш телефон
+                        </span>
+                        <input class="form__input" name="phone" type="tel">
+                    </div>
+                    <div class=" form__row">
+                        <span class="form__name-row">
+                            Ваш email
+                        </span>
+                        <input class="form__input" name="email" type="email">
+                    </div>
+                    <div class="form__row">
+                        <span class="form__name-row">
+                            Ваше сообщение
+                        </span>
+                        <textarea class="form__text-area" name="story"></textarea>
+                    </div>
+                    <div class="form__btn-box">
+                        <button name="submit" type="submit" class="form__btn footer__form-btn">Отправить</button>
+                    </div>
+                </form>
             </div>
+
+            <div class="footer__text-box anim">
+                <h2 class="footer__title">
+                    контакты
+                </h2>
+
+                <a href="tel:+79363145640" class="footer__text">
+                    <span class="svg-bg">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_138_143)">
+                                <path
+                                    d="M6.50198 20.0509C5.39554 20.0509 4.31657 19.8344 3.30688 19.3579C2.98705 19.2068 2.85002 18.8248 3.00063 18.504C3.15154 18.1837 3.53271 18.0461 3.85285 18.1972C8.07595 20.1902 13.8211 16.7915 16.9357 12.3531C18.0124 10.8187 21.2268 5.51265 17.3786 1.65685C16.909 1.18596 16.1442 1.18596 15.675 1.65685L14.301 3.03344C14.0729 3.2614 13.9473 3.56442 13.9473 3.88731C13.9473 4.21006 14.0729 4.51415 14.301 4.74287C14.5276 4.96975 14.719 5.17584 14.8862 5.37245C15.1151 5.6426 15.0826 6.04745 14.8134 6.27708C14.544 6.5058 14.1398 6.47308 13.9106 6.20415C13.7662 6.03415 13.5978 5.85282 13.3956 5.65025C12.9259 5.1789 12.6668 4.55313 12.6668 3.88762C12.6668 3.2218 12.9259 2.59588 13.3962 2.12606L14.7693 0.749929C15.239 0.279345 15.863 0.0205078 16.5267 0.0205078C17.1907 0.0205078 17.8146 0.279345 18.2843 0.749929C21.3118 3.78366 21.1963 8.51305 17.9832 13.0918C15.2785 16.9447 10.6926 20.0509 6.50198 20.0509Z"
+                                    fill="#09AFF4" />
+                                <path
+                                    d="M2.25926 18.5909C2.11887 18.5909 1.97727 18.545 1.85947 18.45C1.63226 18.268 1.41192 18.0703 1.20455 17.8628C0.235904 16.8921 0.235904 15.3113 1.20425 14.3386L2.57939 12.962C3.04907 12.4916 3.67301 12.2326 4.33724 12.2326C5.00147 12.2326 5.62572 12.4916 6.09478 12.9625C7.16887 14.0397 8.15247 14.6692 9.4646 14.2365C11.1857 13.6717 14.1026 10.7492 14.6673 9.02474C14.8594 8.43812 14.848 7.88803 14.6325 7.34284C14.5025 7.01337 14.6638 6.64048 14.9927 6.51007C15.3221 6.38057 15.6937 6.54171 15.8237 6.87088C16.149 7.69478 16.1691 8.55385 15.8841 9.42469C15.1893 11.5474 11.982 14.7604 9.86393 15.4555C7.80014 16.1353 6.28125 14.9648 5.1887 13.8694C4.73443 13.4132 3.93944 13.4135 3.48472 13.8699L2.10987 15.2457C1.6402 15.7172 1.6402 16.4845 2.11018 16.9554C2.28428 17.1299 2.46922 17.2959 2.65996 17.4492C2.936 17.6706 2.9804 18.0744 2.75915 18.351C2.6328 18.5088 2.44694 18.5909 2.25926 18.5909Z"
+                                    fill="#09AFF4" />
+                                <path
+                                    d="M11.1669 11.3729C11.1025 11.3729 11.038 11.3634 10.9745 11.3432L8.85532 10.6743C8.02142 11.1319 7.08954 11.3729 6.14195 11.3729C3.01781 11.3729 0.476562 8.82656 0.476562 5.69651C0.476562 2.56616 3.01781 0.0195312 6.14195 0.0195312C9.26595 0.0195312 11.8072 2.56616 11.8072 5.69651C11.8072 6.64594 11.5672 7.57977 11.1102 8.41514L11.7777 10.5384C11.8496 10.7664 11.7886 11.0156 11.62 11.1848C11.4979 11.3071 11.3345 11.3729 11.1669 11.3729ZM6.14195 1.3021C3.724 1.3021 1.7568 3.27357 1.7568 5.69651C1.7568 8.119 3.724 10.0902 6.14195 10.0902C6.95114 10.0902 7.74599 9.86252 8.44119 9.43153C8.60004 9.33353 8.79322 9.30922 8.97007 9.36564L10.1871 9.74953L9.80383 8.53011C9.74798 8.35215 9.77194 8.1586 9.86975 8.00021C10.2994 7.30381 10.5271 6.50727 10.5271 5.69651C10.5271 3.27357 8.55976 1.3021 6.14195 1.3021Z"
+                                    fill="#09AFF4" />
+                                <path
+                                    d="M5.98542 7.0487C5.63157 7.0487 5.34515 6.76174 5.34515 6.40719L5.34469 6.36102C5.34363 6.05204 5.34134 5.53574 5.8896 5.06623C6.09559 4.88964 6.34432 4.77039 6.58511 4.65511C6.75112 4.57546 7.09628 4.41004 7.12955 4.31999C7.13031 4.31769 7.13169 4.30653 7.12894 4.28498C7.10361 4.0743 6.6614 3.88671 6.16365 3.87555C5.58503 3.86209 5.16784 4.07292 5.14389 4.21725C5.0856 4.56675 4.75722 4.8028 4.40687 4.7447C4.0579 4.6863 3.82214 4.35546 3.88043 4.00626C4.04859 2.99782 5.15945 2.58213 6.19249 2.59298C7.40528 2.62035 8.2926 3.23831 8.40048 4.13071C8.52362 5.14817 7.62211 5.58008 7.13718 5.81262C6.97909 5.88845 6.79934 5.97452 6.72137 6.04134C6.62417 6.12435 6.62417 6.12435 6.62524 6.35552V6.40658C6.62569 6.76143 6.33882 7.0487 5.98542 7.0487Z"
+                                    fill="#09AFF4" />
+                                <path
+                                    d="M5.96776 9.02789C5.73872 9.02789 5.51685 8.93387 5.35373 8.77425C5.19428 8.61097 5.10059 8.38852 5.10059 8.15919C5.10059 7.92986 5.19458 7.70711 5.35373 7.54367C5.67631 7.22047 6.25875 7.22047 6.58163 7.54367C6.74109 7.70359 6.83448 7.9294 6.83448 8.15919C6.83448 8.38822 6.74078 8.61097 6.58163 8.77425C6.41897 8.93387 6.19314 9.02789 5.96776 9.02789Z"
+                                    fill="#09AFF4" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_138_143">
+                                    <rect width="20" height="20" fill="white" transform="translate(0.476562)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+
+
+                    <span class="footer__text-content">+7 936-314-56-40</span>
+                </a>
+                <a href="mailto:dmitryzemtsow@yandex.ru" class="footer__text">
+                    <span class="svg-bg">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.2132 5.15566C17.6892 3.97717 16.9895 3.00744 16.1141 2.24643C15.2383 1.48529 14.2359 0.920625 13.1067 0.552363C11.9773 0.184102 10.8149 0 9.62037 0C8.3599 0 7.15691 0.192598 6.01147 0.576914C4.86566 0.961699 3.85486 1.53861 2.97947 2.30777C2.10367 3.07729 1.404 4.03061 0.880351 5.16791C0.356348 6.30568 0.0947266 7.62721 0.0947266 9.13289C0.0947266 10.5568 0.32793 11.8378 0.794395 12.9751C1.26086 14.1129 1.89918 15.0823 2.70936 15.8844C3.51953 16.686 4.46471 17.304 5.54494 17.7379C6.62518 18.1714 7.77906 18.3885 9.00666 18.3885C9.74318 18.3885 10.492 18.3064 11.253 18.143C12.0141 17.9791 12.7464 17.7336 13.4503 17.4064L12.9593 15.7369C12.6483 15.8512 12.3536 15.966 12.0755 16.0806C11.797 16.195 11.5066 16.2932 11.204 16.3753C10.9009 16.457 10.5779 16.5264 10.2341 16.584C9.89049 16.6411 9.5057 16.6699 9.08025 16.6699C7.93445 16.6699 6.91979 16.4735 6.03596 16.0806C5.15219 15.6879 4.40336 15.1517 3.78965 14.4727C3.17588 13.7937 2.70941 12.9996 2.39025 12.0912C2.07109 11.1829 1.91154 10.2131 1.91154 9.18199C1.91154 8.10176 2.0834 7.10742 2.42711 6.19904C2.77082 5.29066 3.26565 4.50504 3.91246 3.84217C4.55881 3.1793 5.35252 2.65992 6.29389 2.28322C7.2349 1.90693 8.29481 1.71855 9.47324 1.71855C10.6678 1.71855 11.7399 1.90693 12.6894 2.28322C13.6384 2.65992 14.4486 3.18357 15.1199 3.85447C15.7907 4.52578 16.3063 5.32365 16.6665 6.24814C17.0263 7.17305 17.2067 8.18385 17.2067 9.2802C17.2067 9.54217 17.1901 9.89396 17.1576 10.3359C17.1245 10.7778 17.0471 11.2158 16.9244 11.6493C16.8016 12.0832 16.6297 12.4557 16.4088 12.7663C16.1879 13.0774 15.8809 13.2328 15.4882 13.2328C15.1935 13.2328 14.9683 13.143 14.813 12.9628C14.6572 12.7828 14.5387 12.5454 14.457 12.2508C14.3748 11.9561 14.3257 11.6289 14.3097 11.2688C14.2932 10.9089 14.2851 10.5487 14.2851 10.1885V8.54355C14.2851 8.0035 14.2563 7.43074 14.1992 6.825C14.1416 6.21967 13.9575 5.655 13.6468 5.131C13.3357 4.6074 12.8528 4.17352 12.1983 3.8298C11.5436 3.48604 10.6271 3.31424 9.44863 3.31424C8.63002 3.31424 7.85283 3.40863 7.11631 3.5966C6.37979 3.78492 5.70039 4.09184 5.07854 4.51723L5.86416 6.89865C6.19135 6.58793 6.62102 6.34242 7.15311 6.16213C7.68479 5.98219 8.29469 5.89201 8.98211 5.89201C9.4893 5.89201 9.91088 5.94533 10.2465 6.05156C10.5817 6.15826 10.848 6.30932 11.0444 6.50578C11.2408 6.70213 11.3796 6.93967 11.4618 7.21775C11.5435 7.49625 11.5845 7.79895 11.5845 8.12613C11.3552 8.01182 11.036 7.88906 10.6271 7.75787C10.2177 7.62709 9.67768 7.56152 9.00672 7.56152C8.4335 7.56152 7.86502 7.62709 7.30041 7.75787C6.73574 7.88906 6.22398 8.11002 5.76602 8.4208C5.30758 8.73187 4.9351 9.13272 4.64893 9.62379C4.3624 10.1148 4.21932 10.7286 4.21932 11.4651C4.21932 11.9726 4.29684 12.4471 4.45258 12.889C4.60797 13.331 4.8492 13.7199 5.17686 14.0552C5.50404 14.3909 5.91725 14.6528 6.4167 14.8408C6.91574 15.0288 7.50074 15.1232 8.17211 15.1232C9.05594 15.1232 9.85375 14.9674 10.5657 14.6567C11.2778 14.346 11.9119 13.9286 12.4684 13.4046C12.501 13.5849 12.5666 13.7813 12.6648 13.9938C12.763 14.2067 12.9104 14.4032 13.1068 14.583C13.3032 14.7633 13.5567 14.9102 13.8678 15.025C14.1786 15.1393 14.5634 15.1968 15.0218 15.1968C15.6437 15.1968 16.1757 15.0863 16.6175 14.8653C17.0595 14.6443 17.4278 14.354 17.7224 13.9938C18.0169 13.6339 18.2501 13.2326 18.4221 12.7907C18.5939 12.3488 18.7205 11.9154 18.8027 11.4895C18.8843 11.0641 18.9377 10.6632 18.9622 10.2865C18.9868 9.9102 18.9989 9.60756 18.9989 9.37816C18.9988 7.74193 18.7368 6.3341 18.2132 5.15566ZM11.56 10.7287C11.56 11.0563 11.4741 11.3344 11.3021 11.5634C11.1303 11.7928 10.856 11.9973 10.4797 12.1772C10.1686 12.3244 9.83289 12.4472 9.47318 12.5455C9.11295 12.6437 8.76924 12.6928 8.44205 12.6928C8.1144 12.6928 7.85664 12.6398 7.66867 12.5331C7.48035 12.4269 7.33727 12.2999 7.23906 12.1526C7.14086 12.0053 7.07523 11.8499 7.04266 11.6862C7.00967 11.5228 6.99356 11.3835 6.99356 11.2688C6.99356 10.7287 7.18152 10.332 7.55822 10.0781C7.93451 9.82447 8.45816 9.6975 9.12947 9.6975C9.60396 9.6975 10.0662 9.75082 10.5166 9.85705C10.9666 9.96369 11.3145 10.0657 11.56 10.164V10.7287Z"
+                                fill="#09AFF4" />
+                        </svg>
+                    </span>
+
+                    <span class="footer__text-content">dmitryzemtsow@yandex.ru</span>
+                </a>
+
+                <div class="footer__social-box">
+                    <a target="_blank" href="https://t.me/dev_dmitrii" class="footer__social-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_138_161)">
+                                <path
+                                    d="M16.1006 18.9447C15.9443 18.9447 15.7892 18.8984 15.6561 18.8082L10.6273 15.397L7.93012 17.3378C7.71858 17.4899 7.44593 17.5282 7.2003 17.4404C6.95499 17.3523 6.76869 17.1491 6.70219 16.8972L5.3479 11.7648L0.508904 9.91455C0.204269 9.79802 0.00223509 9.50658 1.84203e-05 9.18041C-0.00219825 8.85424 0.195825 8.56006 0.498981 8.43941L18.8986 1.11805C18.9821 1.08258 19.0705 1.0621 19.1596 1.05661C19.1915 1.05471 19.2234 1.05471 19.2552 1.05651C19.4397 1.06749 19.621 1.14264 19.7624 1.28134C19.7771 1.2957 19.791 1.31037 19.8042 1.32568C19.9214 1.45952 19.9858 1.62271 19.9979 1.78896C20.0009 1.83076 20.0007 1.87309 19.997 1.91542C19.9944 1.94561 19.9901 1.97569 19.984 2.00556L16.8782 18.3012C16.8283 18.563 16.6501 18.7821 16.4039 18.8842C16.3063 18.9247 16.2032 18.9447 16.1006 18.9447ZM11.0688 13.7833L15.5483 16.8217L17.9649 4.14191L9.2368 12.5406L11.0477 13.769C11.055 13.7736 11.062 13.7784 11.0688 13.7833ZM7.33985 13.1076L7.93962 15.3802L9.23183 14.4504L7.53977 13.3026C7.46113 13.2494 7.39379 13.1831 7.33985 13.1076ZM2.96994 9.16025L6.29263 10.4306C6.53066 10.5216 6.71031 10.7217 6.77534 10.9681L7.19672 12.5651C7.21603 12.3809 7.29953 12.2075 7.43517 12.077L15.7518 4.07435L2.96994 9.16025Z"
+                                    fill="#ffffff" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_138_162">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" href="https://vk.com/devdmitriy" class="footer__social-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_138_171)">
+                                <path
+                                    d="M16.0116 10.6993L19.988 4.6875H13.8897L13.7759 5.12863C13.4837 6.26114 12.9353 7.79602 11.9824 8.67706C11.8646 8.78586 11.753 8.87329 11.6503 8.94333V4.6875H6.33893V5.86334H6.83515V8.52829C6.23975 8.00461 5.49162 7.00531 5.29569 5.21164L5.23847 4.6875H0L0.1799 5.41626C0.826718 8.03711 1.79702 10.1842 3.06411 11.7978C4.09849 13.1152 5.33048 14.0825 6.72574 14.6725C7.97177 15.1996 9.11907 15.3288 9.94457 15.3288C10.7038 15.3288 11.1908 15.2194 11.2316 15.21L11.6795 15.1056L11.7027 13.4903L13.6972 15.2254H20.0001L16.0116 10.6993ZM10.563 10.9406L10.5175 14.126C9.86095 14.1844 8.56015 14.1867 7.12461 13.5643C5.92573 13.0444 4.86082 12.1931 3.95949 11.0339C2.92723 9.70642 2.10601 7.96951 1.51367 5.86334H4.20027C4.78178 9.23584 7.1214 10.1085 7.22562 10.1456L8.01099 10.4257V5.86334H10.4747V10.4315L11.0932 10.3992C11.1685 10.3952 11.8516 10.3407 12.6583 9.64935C13.5749 8.86368 14.2922 7.5914 14.7936 5.86334H17.8005L14.5342 10.8012L17.3966 14.0494H14.1369L10.563 10.9406Z"
+                                    fill="#ffffff" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_138_171">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" href="https://wa.me/79363145640" class="footer__social-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_138_173)">
+                                <path
+                                    d="M0.833323 18.9583C0.729168 19.1667 0.833323 19.375 0.937478 19.4791C1.14583 19.5833 1.35414 19.5833 1.56249 19.5833L4.68747 18.4375C6.24996 19.4791 8.12496 20 9.99996 20C15.5208 20 20 15.5208 20 9.99996C20 4.47912 15.5208 0 10 0C4.47916 0 0 4.47916 0 10C0 12.0833 0.625013 14.1667 1.875 15.8333L0.833323 18.9583ZM1.04167 9.89585C1.04167 4.89582 5.10418 0.93752 10 0.93752C14.8958 0.93752 18.9583 5.00002 18.9583 9.89585C18.9583 14.7917 14.8958 18.8542 10 18.8542C8.22916 18.8542 6.45831 18.3334 4.99998 17.3958C4.89582 17.2917 4.79163 17.2917 4.68747 17.2917C4.58332 17.2917 4.58332 17.2917 4.47912 17.2917L2.08327 18.2292L2.91659 15.8334C3.02074 15.625 2.91659 15.5209 2.81243 15.3126C1.66669 13.75 1.04167 11.875 1.04167 9.89585Z"
+                                    fill="#ffffff" />
+                                <path
+                                    d="M11.979 16.0415C12.4998 16.1457 12.9165 16.2499 13.4373 16.2499C14.6873 16.2499 15.6248 15.729 16.2498 14.7915C16.5623 14.1665 16.6665 13.6457 16.5623 13.1248C16.354 12.4998 15.8332 12.1873 15.729 12.0832L14.1665 11.2498C13.9582 11.1457 13.7499 11.0415 13.5415 11.0415C12.4998 11.0415 11.8748 12.1873 11.8748 12.1873C11.8748 12.1873 11.7707 12.2915 11.5623 12.2915C11.4582 12.2915 11.4582 12.2915 11.4582 12.2915C9.89567 11.7707 8.74984 10.3123 8.22898 9.58315L8.12483 9.479C7.70817 9.16649 7.60401 9.16649 8.02067 8.74983C8.854 8.02066 8.64569 7.18734 8.43733 6.87483L7.39566 4.37482C7.2915 4.16647 6.87484 3.854 6.45814 3.854C5.93732 3.854 5.31231 4.16651 4.58314 4.89568C2.8123 6.66652 4.16648 9.37484 4.16648 9.37484C6.14563 14.5832 11.7706 15.9373 11.979 16.0415ZM5.31227 5.6248C5.93728 4.89564 6.35394 4.89564 6.4581 4.89564L7.60393 7.39565C7.60393 7.4998 7.70808 7.70815 7.39558 8.02066C6.3539 8.95818 6.66641 9.58315 7.18722 10.2082L7.29138 10.3123C7.8122 11.0415 9.16638 12.8123 11.0414 13.3331C11.0414 13.3331 11.2497 13.3331 11.458 13.3331C11.9789 13.3331 12.3956 13.1248 12.708 12.7081C12.8122 12.3956 13.333 11.8748 13.7497 12.0831L15.3122 12.8123C15.3122 12.8123 15.5205 12.9164 15.6247 13.1248C15.7288 13.4373 15.5205 13.7498 15.4163 13.9581C14.8955 14.8956 13.8538 15.1039 12.3955 14.7914C12.1872 14.7914 7.08303 13.4373 5.20799 8.85394C5.10396 9.06233 4.06228 6.97899 5.31227 5.6248Z"
+                                    fill="#ffffff" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_138_174">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
         </div>
-        <div class="footer__form-box anim">
-            <form class="form" action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
-                <div class="form__row">
-                    <span class="form__name-row">
-                        ваше имя
-                    </span>
-                    <input class="form__input" name="name" type="text">
-                </div>
-                <div class="form__row">
-                    <span class="form__name-row">
-                        ваш телефон
-                    </span>
-                    <input class="form__input" name="phone" type="tel">
-                </div>
-                <div class=" form__row">
-                    <span class="form__name-row">
-                        ваш email
-                    </span>
-                    <input class="form__input" name="email" type="email">
-                </div>
-                <div class="form__row">
-                    <span class="form__name-row">
-                        ваше сообщение
-                    </span>
-                    <textarea class="form__text-area" id="story" name="story"></textarea>
-                </div>
-                <div class="form__btn-box">
-                    <button name="submit" type="submit" class="form__btn">отправить</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</footer>
-    <script src="https://kit.fontawesome.com/ddb06d4443.js?_v=20230918101739" crossorigin="anonymous"></script>
-    <script type="module" src="js/script.min.js?_v=20230918101739"></script>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/ddb06d4443.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+        integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/script.min.js"></script>
 </body>
 
 </html>

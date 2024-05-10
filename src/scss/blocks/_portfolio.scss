@@ -1,45 +1,81 @@
 .portfolio {
     background: #060922;
 }
+
 .portfolio__container {
-    padding: 2.6% 10px 4% 10px;
+    // padding: 2.6% 10px 4% 10px; 
 }
+
 .portfolio__title {
     transform: translateY(400px);
 }
+
 .portfolio__subtitle {
     margin-top: 1%;
     margin-bottom: 2.4%;
     transform: translateY(400px);
 }
+
 .portfolio__item-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 31px;
     transform: translateY(400px);
-    @media (max-width: 668px) {
+
+    @include respond-to("pc-old") {
+        gap: 20px;
+    }
+
+    @include respond-to("nout") {
+        gap: 15px;
+    }
+
+    @include respond-to("tab") {
         justify-content: center;
     }
 }
+
 .portfolio__item {
     overflow: hidden;
     position: relative;
-    flex: 0 1 31.333%;
-    height: 0;
-    padding-bottom: prop(423, 1412);
+    flex: 0 1 calc((100% - 2 * 31px) / 3);
+    height: 300px;
+
     &:hover .portfolio__item-img {
         transition: 0.5s;
         opacity: 0.7;
     }
-    @media (max-width: 877px) {
-        flex: 0 1 48%;
-        padding-bottom: prop(380, 830);
+
+    @include respond-to("pc") {
+        height: 260px;
     }
-    @media (max-width: 668px) {
-        flex: 1 1 48%;
-        padding-bottom: prop(610, 662);
+
+    @include respond-to("pc-old") {
+        height: 200px;
+        flex: 0 1 calc((100% - 2 * 20px) / 3);
+    }
+
+    @include respond-to("nout") {
+        flex: 0 1 calc((100% - 1 * 15px) / 2);
+        height: 240px;
+    }
+
+    @include respond-to("tab") {
+        flex: 0 1 100%;
+        max-width: 550px;
+        height: 300px;
+    }
+
+    @include respond-to("tel") {
+        max-width: 100%;
+        height: 260px;
+    }
+
+    @include respond-to("tel-old") {
+        height: 200px;
     }
 }
+
 .portfolio__item-img {
     position: absolute;
     top: 0;
@@ -48,49 +84,63 @@
     height: 100%;
     transition: 0.5s;
 }
+
 .portfolio__description-box {
     position: absolute;
     left: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px 10px 10px 0;
+    padding: 5px 10px 5px 60px;
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    // height: 40px;
     transition: 0.5s;
     transform: translateY(150px);
     display: flex;
+
     &.active {
         transition: 0.5s;
         transform: translateY(0);
     }
 }
+
 .portfolio__item-title {
     color: #ecedef;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 0.3px;
+    text-align: center;
 }
+
 .portfolio__btn {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/portfolio/Arrow 3.png") center center / 70% no-repeat;
+    background: url("../img/portfolio/Arrow 3.png") center center / 40% no-repeat;
     background-color: #09aff4;
     width: 60px;
     height: 100%;
     opacity: 0;
     transition: 0.5s;
     transform: translateX(-100px);
+
     &.active {
         opacity: 1;
         transition: 0.5s;
         transform: translateX(0);
     }
+
     &:hover {
         transition: 0.2s;
-        background: url("../img/portfolio/Arrow 3.png") center center/75% no-repeat;
+        background: url("../img/portfolio/Arrow 3.png") 30px center/40% no-repeat;
         background-color: #09aff4;
     }
+}
+
+.portfolio__btn-more {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @include adaptiveValue(font-size, 20, 18);
 }

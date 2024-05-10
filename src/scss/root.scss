@@ -1,0 +1,32 @@
+:root {
+
+    //container
+    .container {
+        max-width: 1432px;
+        margin: 0 auto;
+
+        @include respond-to("pc") {
+            max-width: 1220px;
+        }
+
+        @include respond-to("pc-old") {
+            max-width: 1010px;
+        }
+
+        @include respond-to("nout") {
+            max-width: 800px;
+        }
+
+        @include respond-to("tab") {
+            max-width: 650px;
+        }
+
+        @include respond-to("tel") {
+            max-width: 450px;
+        }
+
+        @include respond-to("tel-old") {
+            max-width: 310px;
+        }
+    }
+}

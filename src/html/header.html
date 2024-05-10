@@ -1,16 +1,61 @@
 <header class="header">
     <div class="container header__container">
         <a href="#about" class="header__logo-wrap">
-            <img class="img" src="@img/header/Component 5 1.png" alt="logo">
+            <img class="img" src="@img/header/logo.png" alt="Логотип сайта">
         </a>
-        <nav class="nav">
-            <a href="#about" class="nav-item">обо мне</a>
-            <a href="#service" class="nav-item">услуги</a>
-            <a href="#sertificates" class="nav-item">навыки</a>
-            <a href="#portfolio" class="nav-item">портфолио</a>
-            <a href="#technologies" class="nav-item">технологии</a>
-            <a href="#footer" class="nav-item">контакты</a>
+
+        <nav class="navmenu_3 nav">
+            <ul>
+                <li class="nav-li"><a class="nav-item _scroll-js active" href="#about">Обо мне</a></li>
+                <li class="nav-li"><a class="nav-item _scroll-js" href="#service">Услуги </a></li>
+                <li class="nav-li"><a class="nav-item _scroll-js" href="#sertificates">Навыки</a></li>
+                <li class="nav-li"><a class="nav-item _scroll-js" href="#portfolio">Портфолио</a></li>
+                <li class="nav-li"><a class="nav-item _scroll-js" href="#technologies">Технологии</a></li>
+                <li class="nav-li"><a class="nav-item _scroll-js" href="#reviews">Отзывы</a></li>
+                <li class="nav-li"><a class="nav-item _scroll-js" href="#footer">Контакты</a></li>
+            </ul>
         </nav>
+
+        <div class="header__contact-box">
+            <a href="tel:+79363145640" class="header-phone">
+                +7 936-314-56-40
+            </a>
+            <button data-fancybox data-src="#form" class="form__btn header__form-btn">
+                Получить консультацию
+            </button>
+
+            <form id="form" style="display:none;" class="form"
+                action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+                <div class="form__row">
+                    <span class="form__name-row">
+                        Ваше имя
+                    </span>
+                    <input class="form__input" name="name" type="text">
+                </div>
+                <div class="form__row">
+                    <span class="form__name-row">
+                        Ваш телефон
+                    </span>
+                    <input class="form__input" name="phone" type="tel">
+                </div>
+                <div class=" form__row">
+                    <span class="form__name-row">
+                        Ваш email
+                    </span>
+                    <input class="form__input" name="email" type="email">
+                </div>
+                <div class="form__row">
+                    <span class="form__name-row">
+                        Ваше сообщение
+                    </span>
+                    <textarea class="form__text-area" name="story"></textarea>
+                </div>
+                <div class="form__btn-box">
+                    <button name="submit" type="submit" class="form__btn">Отправить</button>
+                </div>
+            </form>
+
+        </div>
         <!-- Кнопка меню-бургера -->
         <button class="burger-menu-wrap">
             <span class="burger-menu"></span>
@@ -20,22 +65,65 @@
 <nav class="nav_box-mob">
     <ul class="nav_box-mob-list">
         <li>
-            <a href="#about" class="nav-item">обо мне</a>
+            <a href="#about" class="nav-item _scroll-js">Обо мне</a>
         </li>
         <li>
-            <a href="#service" class="nav-item">услуги</a>
+            <a href="#service" class="nav-item _scroll-js">Услуги</a>
         </li>
         <li>
-            <a href="#sertificates" class="nav-item">навыки</a>
+            <a href="#sertificates" class="nav-item _scroll-js">Навыки</a>
         </li>
         <li>
-            <a href="#portfolio" class="nav-item">портфолио</a>
+            <a href="#portfolio" class="nav-item _scroll-js">Портфолио</a>
         </li>
         <li>
-            <a href="#technologies" class="nav-item">технологии</a>
+            <a href="#portfolio" class="nav-item _scroll-js">Технологии</a>
         </li>
         <li>
-            <a href="#footer" class="nav-item">контакты</a>
+            <a href="#technologies" class="nav-item _scroll-js">Отзывы</a>
+        </li>
+        <li>
+            <a href="#footer" class="nav-item _scroll-js">Контакты</a>
         </li>
     </ul>
+    <div class="header__contact-box header__contact-box_mob">
+        <a href="tel:+79363145640" class="header-phone">
+            +7 936-314-56-40
+        </a>
+        <button data-fancybox data-src="#form-2" class="form__btn header__form-btn">
+            Получить консультацию
+        </button>
+
+        <form id="form-2" style="display:none;" class="form"
+            action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+            <div class="form__row">
+                <span class="form__name-row">
+                    Ваше имя
+                </span>
+                <input class="form__input" name="name" type="text">
+            </div>
+            <div class="form__row">
+                <span class="form__name-row">
+                    Ваш телефон
+                </span>
+                <input class="form__input" name="phone" type="tel">
+            </div>
+            <div class=" form__row">
+                <span class="form__name-row">
+                    Ваш email
+                </span>
+                <input class="form__input" name="email" type="email">
+            </div>
+            <div class="form__row">
+                <span class="form__name-row">
+                    Ваше сообщение
+                </span>
+                <textarea class="form__text-area" name="story"></textarea>
+            </div>
+            <div class="form__btn-box">
+                <button name="submit" type="submit" class="form__btn">Отправить</button>
+            </div>
+        </form>
+
+    </div>
 </nav>

@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('./html/head.html',{
-"title": "Дмитрий Земцов"
+"title": "Dev-Дмитрий"
 })
 
 <body>
-    <div class="popup-bg">
-        <div class="popup-wrap">
-        </div>
-        <button class="img-exit">х</button>
-    </div>
     @@include('./html/header.html')
     <main>
         @@include('./html/about.html')
@@ -17,9 +12,17 @@
         @@include('./html/certificates.html')
         @@include('./html/portfolio.html')
         @@include('./html/technologies.html')
+        @@include('./html/reviews.html')
     </main>
     @@include('./html/footer.html')
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/ddb06d4443.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+        integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="js/script.min.js"></script>
 </body>
 

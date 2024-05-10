@@ -5,38 +5,127 @@
     left: 0;
     z-index: 50;
 }
+
 .header__container {
-    padding: 10px;
+    padding: 10px 10px 10px 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
+
 .header__logo-wrap {
     position: relative;
-    width: 129px;
-    height: 114px;
-    margin-left: 3.8%;
+    width: 108px;
+    height: 104px;
+    margin-right: 80px;
+
+    @include respond-to("pc") {
+        margin-right: 30px;
+        width: 88px;
+        height: 75px;
+    }
+
+    @include respond-to("pc-old") {
+        margin-right: 15px;
+    }
 }
+
 .nav {
-    flex: 0 1 75%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     justify-content: space-around;
-    @media (max-width: 800px) {
+
+    @include respond-to("nout") {
         display: none;
     }
 }
+
 .nav-item {
     color: #ecedef;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 500;
-    transition: 0.5s;
+
+    @include respond-to("pc") {
+        font-size: 14px;
+    }
+
+    @include respond-to("pc-old") {
+        font-size: 12px;
+    }
+
+    @include respond-to("nout") {
+        font-size: 18px;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            color: #060922;
+        }
+    }
+}
+
+.header__contact-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+
+    @include respond-to("pc-old") {
+        gap: 20px;
+    }
+
+    @include respond-to("nout") {
+        margin-right: auto;
+    }
+
+    @media (max-width:630px) {
+        margin-left: 0;
+    }
+
+    @include respond-to("tel") {
+        display: none;
+    }
+}
+
+.header__contact-box_mob {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 20px;
+
+    &>button {
+        border: 1.5px solid #060922;
+
+        &:hover {
+            color: #060922;
+        }
+    }
+
+    @include respond-to("tel") {
+        display: flex;
+    }
+}
+
+.header-phone {
+    color: #ecedef;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+
     &:hover {
-        transition: 0.5s;
-        text-decoration: underline;
-        // transform: scale(1.01);
+        transition: 0.3s;
+        color: #060922;
+    }
+
+    @include respond-to("pc") {
+        font-size: 16px;
+    }
+
+    @include respond-to("pc-old") {
+        font-size: 14px;
     }
 }
 
@@ -52,41 +141,52 @@
     position: absolute;
     right: 20px;
     z-index: 20;
+
     &:hover {
         transform: scale(90%);
     }
-    @media (max-width: 800px) {
+
+    @include respond-to("nout") {
         display: flex;
     }
+
+    @include respond-to("tel") {
+        width: 30px;
+        height: 30px;
+    }
 }
+
 // Контент бургера
 .burger-menu {
     display: flex;
     width: 40px;
     height: 3px;
-    background-color: #060922;
+    background-color: #fff;
     position: relative;
     z-index: 20;
+
     &::before {
         content: "";
         display: flex;
         width: 40px;
         height: 3px;
-        background-color: #060922;
+        background-color: #fff;
         position: absolute;
         top: 12px;
         transition: 0.5s;
     }
+
     &::after {
         content: "";
         display: flex;
         width: 40px;
         height: 3px;
-        background-color: #060922;
+        background-color: #fff;
         position: absolute;
         top: -12px;
         transition: 0.5s;
     }
+
     &.active {
         z-index: 20;
         display: flex;
@@ -94,6 +194,7 @@
         height: 0;
         background-color: #fff;
         position: relative;
+
         &::before {
             content: "";
             display: flex;
@@ -105,6 +206,7 @@
             transform: rotate(45deg);
             transition: 0.5s;
         }
+
         &::after {
             content: "";
             display: flex;
@@ -117,12 +219,29 @@
             transition: 0.5s;
         }
     }
+
+    @include respond-to("tel") {
+        width: 30px;
+        height: 2px;
+
+        &::before {
+            width: 30px;
+            height: 2px;
+        }
+
+        &::after {
+            width: 30px;
+            height: 2px;
+        }
+    }
 }
+
 //========================= Мобильное меню================
 .nav_box-mob {
     padding: 154px 25px 25px 25px;
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     left: 0;
@@ -130,7 +249,8 @@
     opacity: 0;
     transition: 0.5s;
     transform: translateY(-436px);
-    background-color: #060922;
+    background-color: #09aff4;
+
     &.active {
         transition: 0.5s;
         opacity: 1;
@@ -138,9 +258,90 @@
         z-index: 21;
     }
 }
+
 .nav_box-mob-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+}
+
+//=====
+.navmenu_3 {
+    position: relative;
+    padding: 10px 20px;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+
+    @include respond-to("pc-old") {
+        padding: 10px 10px;
+    }
+
+    @include respond-to("nout") {
+        display: none;
+    }
+}
+
+.navmenu_3 .line {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #337AB7;
+    transition: 0.3s;
+}
+
+.navmenu_3 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navmenu_3 ul li {
+    margin: 0 20px 0 0;
+    transition: all 0.4s ease;
+
+    @include respond-to("pc-old") {
+        margin: 0 10px 0 0;
+    }
+}
+
+.navmenu_3 ul li:last-child {
+    margin: 0;
+}
+
+.navmenu_3 ul li a {
+    color: #fff;
+    display: block;
+    // font-size: 16px;
+}
+
+.navmenu_3 ul li:hover a,
+.navmenu_3 ul li.active a {
+    color: #000;
+}
+
+.header__form-btn {
+    border: 1.5px solid rgb(9, 175, 244);
+    color: #fff;
+    @include adaptiveValue(font-size, 16, 14);
+
+    &.active {
+        border: 1.5px solid #060922;
+
+        &:hover {
+            color: #060922;
+        }
+    }
+
+    @include respond-to("pc") {
+        padding: 10px 15px 10px 15px;
+    }
+
+    @include respond-to("pc-old") {
+        font-size: 14px;
+    }
 }

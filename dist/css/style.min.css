@@ -989,8 +989,13 @@ summary {
 
 .about {
   background: url("../img/about/about-bg.png") 0 0/cover no-repeat;
-  height: 100dvh;
+  height: 100vh;
   padding: 0;
+}
+@media (max-width: 768px) {
+  .about {
+    height: 800px;
+  }
 }
 
 .about__container {

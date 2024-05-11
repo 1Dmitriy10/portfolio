@@ -370,6 +370,26 @@ textarea {
   }
 }
 
+input::placeholder {
+  color: #fff;
+}
+
+.form-message {
+  display: none;
+}
+
+.active_green {
+  display: flex;
+  border: 1px solid green;
+  color: green;
+}
+
+.active_red {
+  display: flex;
+  border: 1px solid red;
+  color: red;
+}
+
 * {
   margin: 0;
   padding: 0;

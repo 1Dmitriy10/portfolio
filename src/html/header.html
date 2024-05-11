@@ -27,36 +27,36 @@
             <a aria-label="Позвонить по номеру +79363145640" href="tel:+79363145640" class="header-phone">
                 +7 936-314-56-40
             </a>
-            <button aria-label="Показать форму обратной связи" data-fancybox data-src="#form"
+            <button aria-label="Показать форму обратной связи" data-fancybox data-src="#form_1"
                 class="form__btn header__form-btn">
                 Получить консультацию
             </button>
 
-            <form id="form" style="display:none;" class="form"
-                action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+            <form style="display:none;" class="form">
+                <div class="form-message"></div>
                 <div class="form__row">
                     <span class="form__name-row">
-                        Ваше имя
+                        *Ваше имя
                     </span>
-                    <input class="form__input" for="name" name="name" type="text">
+                    <input class="form__input" id="basic_name" for="name" name="name" type="text">
                 </div>
                 <div class="form__row">
                     <span class="form__name-row">
                         Ваш телефон
                     </span>
-                    <input class="form__input" for="phone" name="phone" type="tel">
+                    <input class="form__input" for="phone" name="tel" type="tel" placeholder="+7 (___) ___-__-__">
                 </div>
                 <div class=" form__row">
                     <span class="form__name-row">
-                        Ваш email
+                        *Ваш email
                     </span>
-                    <input class="form__input" for="email" name="email" type="email">
+                    <input class="form__input" id="basic_email" for="email" name="email" type="email">
                 </div>
                 <div class="form__row">
                     <span class="form__name-row">
                         Ваше сообщение
                     </span>
-                    <textarea class="form__text-area" for="story" name="story"></textarea>
+                    <textarea class="form__text-area" for="story" name="text"></textarea>
                 </div>
                 <div class="form__btn-box">
                     <button name="submit" type="submit" class="form__btn">Отправить</button>
@@ -98,35 +98,35 @@
         <a aria-label="Позвонить по номеру +79363145640" href="tel:+79363145640" class="header-phone">
             +7 936-314-56-40
         </a>
-        <button data-fancybox data-src="#form-2" class="form__btn header__form-btn">
+        <button data-fancybox data-src="#form_2" class="form__btn header__form-btn">
             Получить консультацию
         </button>
 
-        <form id="form-2" style="display:none;" class="form"
-            action="https://getform.io/f/f3cbc501-44b5-4a63-9df1-ac653dbda3f3" method="POST">
+        <form style="display:none;" class="form">
+            <div class="form-message"></div>
             <div class="form__row">
                 <span class="form__name-row">
-                    Ваше имя
+                    *Ваше имя
                 </span>
-                <input class="form__input" name="name" type="text">
+                <input class="form__input" id="basic_name" name="name" type="text">
             </div>
             <div class="form__row">
                 <span class="form__name-row">
                     Ваш телефон
                 </span>
-                <input class="form__input" name="phone" type="tel">
+                <input class="form__input" name="tel" type="tel">
             </div>
             <div class=" form__row">
                 <span class="form__name-row">
-                    Ваш email
+                    *Ваш email
                 </span>
-                <input class="form__input" name="email" type="email">
+                <input class="form__input" id="basic_email" name="email" type="email">
             </div>
             <div class="form__row">
                 <span class="form__name-row">
                     Ваше сообщение
                 </span>
-                <textarea class="form__text-area" name="story"></textarea>
+                <textarea class="form__text-area" name="text"></textarea>
             </div>
             <div class="form__btn-box">
                 <button name="submit" type="submit" class="form__btn">Отправить</button>

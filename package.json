@@ -34,6 +34,7 @@
     "gulp-ttf2woff2": "last",
     "gulp-version-number": "last",
     "gulp-zip": "last",
+    "just-validate": "^4.3.0",
     "sass": "last",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",

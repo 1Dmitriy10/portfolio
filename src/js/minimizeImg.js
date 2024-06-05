@@ -1,4 +1,4 @@
-export function getMinimize() {
+export async function getMinimize() {
     const exitImg = document.querySelectorAll(".img-exit")
     const img = document.querySelectorAll(".minimize")
     const popupBg = document.querySelector(".popup-bg")

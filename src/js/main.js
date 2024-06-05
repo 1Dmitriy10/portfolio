@@ -5,11 +5,12 @@ import { getBlueBg } from "./animationBgBlue.js";
 import { certificatesSlider, technologiesSlider } from "./slider.js";
 // import { getMinimize } from "./minimizeImg.js";
 import { getAnimation } from "./animationPortfolio.js";
-import { scrolAnim } from "./scrolAnim.js";
+// import { scrolAnim } from "./scrolAnim.js";
 import { animMenu } from "./animMenu.js";
 import { anchorScroll } from "./animScroll.js";
 import { activeMenu } from "./activeMenu.js";
 import { tilt } from "./tilt.js";
+
 import { bg } from "./jquery.buoyant.js";
 
 import { getAos } from "./aos.js";

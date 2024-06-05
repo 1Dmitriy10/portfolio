@@ -375,10 +375,10 @@ input::placeholder {
     color: red;
 }
 
-
+@import "./blocks/about";
 @import "./blocks/footer";
 @import "./blocks/header";
-@import "./blocks/about";
+
 @import "./blocks/service";
 @import "./blocks/certificates";
 @import "./blocks/portfolio";

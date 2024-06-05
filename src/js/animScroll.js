@@ -1,4 +1,4 @@
-export function anchorScroll() {
+export async function anchorScroll() {
     
     //получаем все ссылки навигации
     let links = document.querySelectorAll('._scroll-js');

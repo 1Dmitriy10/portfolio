@@ -1,4 +1,4 @@
-export function validateForm() {
+export async function validateForm() {
     $(document).ready(function() {
         //===маска===
 let phone = $('input[name="tel"]');

@@ -1,4 +1,4 @@
-export function getColorHeader() {
+export async function getColorHeader() {
     const header = document.querySelector(".header");
     let btn = document.querySelector(".header__form-btn");
     

@@ -1,4 +1,4 @@
-export function scrolAnim() {
+export async function scrolAnim() {
     let items = document.querySelectorAll(".anim");
     for (const el of items) {
         window.addEventListener("scroll", getAnim)

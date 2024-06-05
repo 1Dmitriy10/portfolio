@@ -11,7 +11,7 @@ export const js = () => {
      .pipe(webpack({
         mode: app.isBuild ? "production" : "none",
         optimization: {
-            // minimize: false
+            // minimize: true
         },
         output: {
             filename: 'script.min.js'

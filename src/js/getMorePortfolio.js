@@ -1,5 +1,5 @@
 import { getAnimation } from "./animationPortfolio.js";
-export function getMore() {
+export async function getMore() {
     let items = [
 `<div class="portfolio__item">
         <img src="img/portfolio/potfolio__site-1.png" alt="сайт - центр здоровья и красоты романов" class="portfolio__item-img">

@@ -1,4 +1,5 @@
-export function getAnimation() {
+export async function getAnimation() {
+    
     let item = document.querySelectorAll(".portfolio__item");
     let wrap, btn
 

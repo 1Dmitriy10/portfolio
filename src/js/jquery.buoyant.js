@@ -1,7 +1,7 @@
 /*
 * Plugin by Codonist.com
 * */
-export function bg(){
+export async function bg(){
     (function ($) {
         $.fn.buoyant = function (options) {
     

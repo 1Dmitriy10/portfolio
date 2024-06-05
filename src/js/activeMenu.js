@@ -1,4 +1,6 @@
-export function activeMenu() {
+export async function activeMenu() {
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+    if (mediaQuery.matches) {
 //=== все элементы якорей
 let about = $('#about').offset().top;
 let service = $('#service').offset().top;
@@ -133,6 +135,8 @@ $(window).scroll(function() {
         }
     }
 });
+    }
+
 
 //===
 };

@@ -1,4 +1,4 @@
-export function getMobMenu() {
+export async function getMobMenu() {
     let burgerMenuBTN = document.querySelector('.burger-menu-wrap');
     let exitBurgerMenuBTN = document.querySelector('.burger-menu-wrap-exit');
     let burgerMenu = document.querySelector('.burger-menu');
